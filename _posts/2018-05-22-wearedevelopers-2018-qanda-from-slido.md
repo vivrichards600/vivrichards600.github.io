@@ -17,8 +17,6 @@ Last week (16-18 May) I was invited to take part in the [WeAreDevelopers confere
 
 The event boasted 8,000 attendees and 250 speakers which was absolutely amazing. They managed to pull off a fantastic event and attract some absolutely amazing speakers like Steve Wozniak (Co-founder at Apple Inc.), Angie Jones (Senior Automation Engineer at Twitter), Joel Spolsky (CEO at Stack Overflow), Joseph Sirosh (VP of AI at Microsoft), Brenda Romero (Game Designer at Romero games) and John Romero (Game Designer at id) to name just a few! [View a full list of the amazing speakers here](https://www.wearedevelopers.com/speakers/).
 
-![_config.yml]({{ site.baseurl }}/images/wad.jpg) 
-
 My session ran on the last day, Friday 18th at 3:15pm in room E1. In my session I was given 45 minutes to speak to a packed room of nearly 600 people. Unfortunately the talk took up the whole slot and so I ran out of time to answer any questions.
 
 ![_config.yml]({{ site.baseurl }}/images/wad2018audience.jpg) 
