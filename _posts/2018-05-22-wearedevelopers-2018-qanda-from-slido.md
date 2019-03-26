@@ -1,0 +1,123 @@
+---
+layout: post
+title: WeAreDevelopers - Automating visual regression testing Q&A from Sli.do
+description: 
+headline: 
+modified: 2018-05-22
+category: Automation
+tags: []
+imagefeature: 
+mathjax: 
+chart: 
+comments: true
+featured: true
+---
+
+Last week (16-18 May) I was invited to take part in the [WeAreDevelopers conference](http://www.wearedevelopers.com/) taking place in Vienna, Austria. I was accepted to give a talk I've been giving a lot recently at local meetups and conferences "Spot the difference - automating visual regression testing". 
+
+The event boasted 8,000 attendees and 250 speakers which was absolutely amazing. They managed to pull off a fantastic event and attract some absolutely amazing speakers like Steve Wozniak (Co-founder at Apple Inc.), Angie Jones (Senior Automation Engineer at Twitter), Joel Spolsky (CEO at Stack Overflow), Joseph Sirosh (VP of AI at Microsoft), Brenda Romero (Game Designer at Romero games) and John Romero (Game Designer at id) to name just a few! [View a full list of the amazing speakers here](https://www.wearedevelopers.com/speakers/).
+
+![_config.yml]({{ site.baseurl }}/images/wad.jpg) 
+
+My session ran on the last day, Friday 18th at 3:15pm in room E1. In my session I was given 45 minutes to speak to a packed room of nearly 600 people. Unfortunately the talk took up the whole slot and so I ran out of time to answer any questions.
+
+![_config.yml]({{ site.baseurl }}/images/wad2018audience.jpg) 
+
+Luckily the fantastic people at [sli.do](https://sli.do) have been kind enough to send me all of the questions which attendees posted during my session and so in this blog post I will try my best to try and answer all of the questions.
+
+### Slid.do Questions
+
+**At what point should we worry about each layer of the pyramid testing? Meaning on a initial stage of development should we worry about UI testing?** _- Anonymous_
+
+I guess it depends on the type of application your working on. When we look at the testing automation pyramid it has unit tests at the bottom, integration/service tests at the middle and then UI tests at the top. You tend to have more tests lower down with this model as they tend to be cheaper to implement and maintain as well as faster to execute, things get slower and more expensive to implement and maintain going further up the triangle. If your lucky enough to have a team who practice TDD (Test Driven Development) then hopefully your team are already writing tests for the bottom layer(s) early on during development. With regards to UI testing it will depend on how frequest the front end of your appliation changes. If things are not finalised or are subject to change quite a bit you will probably want to shy away from writing UI tests until the last responsible moment.
+
+**How do we get our PO's to see the value in UI Tests (since they require such a huge investment)?** _- Anonymous_ 
+
+If you find yourself manually testing happy/critical paths of your system every time you make changes to your software then the time spent testing these is taking up time where you could be testing the new features, exploratory testing etc. It's tricky to try and convince a business or perhaps your product owners, perhaps try to add a spike to your sprint so that you can show a PoC (proof of concept) end to end test to demonstrate to the business the value in these types of tests. Often it's difficult to get a point across and having something visual can really help people to digest an idea a bit better? 
+
+**So you only talk about manual testing, but haven't mentioned exploratory testing, what do you think about that?** _- Ben_
+
+Good question, the talk was aimed mainly at automation issues and how visual testing can try to add value to our checks. I don't believe manual or exploratory testing can be fully replaced with tools and frameworks (though I am working on a number of tools to assist and automate parts of this) and so I feel it is a vital part of software testing and something that shouldn't be forgotten and won't be!
+
+**Selenium IDE is outdated. You can not use it with modern browsers. Is there are alternatives to this IDE? (Katalon studio?)** _- Sexy_
+
+Though I've used a number of different tools/frameworks I tend to stick to Selenium WebDriver - I've heard good things about Katalon Studio as it has extensions for Chrome and Firefox.
+
+**How do you deal with the latest changes made in selenium? (DriverWait will be moved out)?** _- Anonymous_
+
+Unfortunately (luckily!!!) we are not using the latest changes made in Selenium, this is because we have various other 'things' (Selenium WebDriver, nUnit, TestAdapter, Specflow and a number of other NuGet packages) which rely on certain versions to play nicely with each other and so we've not attempted to upgrade anything yet as it's currently ok for us. There was an interesting talk by Cypress.io at the WeAreDevs conference which by all accounts doesn't have the wait and maintenance issues you often get with Selenium. This could be something worth looking in to perhaps althought browser support is currently Chrome, Firefox will be soon and there's no support for IE which could be an issue for you depending on what your customers need your software to work in? 
+
+**Selenium + Appium is quite slow. It has the advantage of writing tests once for iOS and Android, but what would you recommend for
+time performance?** _- VoteMe_ 
+
+I've only used Appium a little bit to test how testing mobile devices will work, this is still something we as a business are investigating to see if it's right for us. With regards to being slow, I guess much of this is due to Selenium possibly, are you in a position to look at other options other than Selenium? It's something I can't really give any further advice on but it's worth seeing what's out there and perhaps run a few spikes to see if there are better alternatives out there?
+
+**Don't you polute the code base with Qa-selectors, especially when your Test project is separate from the actual Application?** _- Alex_
+
+Great question! We use Qa-selectors sparingly and apply them only to the elements which we have to interact with in order to complete happy/critical paths through our system. Yes your test project is separate from the actual application but in some cases where by you may have a front end application which has elements with no id's and classes may be duplicated this can have an impact on your maintenance of your tests on how you interact with elements. I guess it's a trade off, cleaner, easier to maintain tests with a few classes added (which you could also use to style elements!?) or elements which share duplicate classes which then require you to use bad things like xpath in your tests? It's not something perhaps that will be right for everyone but you have to do what feels right for you and your project. I guess there's not a one size fits all as with anything.
+
+**Is there a place for manual testing in non gui applications?** _- Anonymous_
+
+Unfortunately this isn't something I know enough about to give an honest answer, sorry.
+
+**How to implement Visual testing to dynamic pages?** _- Anonymous_ 
+
+You can approach this in a number of ways. Firstly you could not focus on the whole pages but instead compare areas of a page by specifying a Id or class name. Alternatively if you did want to compare a whole page you could 'blanket' over areas which are dynamic and likely to change. By blanketing over areas which could change, the dynamic element will be filled for example by a block of colour and so everytime you do a comparison it will be covered by the same block of colour and so the tests will not fail if the areas underneath the blanket change.
+
+![_config.yml]({{ site.baseurl }}/images/visual-dynamic-content.png) 
+
+**Can any of those frameworks be used for non-web applications?** _- Anonymous_
+
+I work at a company where by we build web applications and so I've not had any experience in testing windows applications for example. After a quick google though I can see there are many tools out there for automating desktop appliations like AutoIt, Winium. You could use something like these to automate your desktop application, take a screenshot and then do a byte for byte comparison. If you try this I'd love to hear how it went, perhaps write a blog post and share it with us :-) ?!
+
+**Are any of those frameworks usable for non-static images (e.g. making sure animations work correctly)** _- Anonymous_
+
+This isn't something I've tried. I'm guessing there are tools out there (perhaps in GitHub for free) which will enable you for example to get each frame from a .gif file and then you could compare frame by frame if each frame matched using image comparison? If you try this I'd love to know how it went - please write a blog post and share with us :-) ?!
+
+**How to deal with automated tests for mobile games?** _- Anonymous_
+
+I've unfortunately never writen a game or tested one... perhaps like the question above you'd approach it in possibly a similar type of way? I saw an interesting video on youtube the other week how the peple at CandyCrush test using AI - this may give you some ideas?! https://www.youtube.com/watch?v=wHlD99vDy0s
+
+**What do you think about cypress? Will it replace Selenium at some point?** _- Anonymous_
+
+I'd actually tried Cypress before the WeAreDevelopers conference but was really interested in the talk at the event. I don't think it will currently replace Selenium for a few reasons. Companies can't just drop 1,000s of tests and switch tools, they need to be convinced of the value and have time to commit to onboard staff and move tests to a new tool or framework. One of the main problems I see with Cypress is that if you develop or test for a government organisation for example in the UK you have to suppport IE. Cypress currently works with Chrome and it's variants, is soon to work with Firefox but it doesn't support IE and the chap giving the talk said it wasn't something they were really keen to sort out. Even if people do not like IE, if you cannot test browsers people use or you have to support then this is a problem. I'll be interested to see it's progress, it looks great
+
+**What is the GetDifference method you are calling? Is this your own, or part of one of the APIs you mentioned?** _- Anonymous_
+
+The 'GetDiffence' method the examples were calling was part of an example framework I created to show the power of visual testing in the talk. The method takes either two images or an image and a url which it should navigate to and take a snapshot to compare. Depending on the framework you use the method will be named/function slightly differently - it should take two images, compare the differences, and then tell you if they differed at all.
+
+**How do you combine visual testing together with AB tests that change the visuals?** _- Anonymous_
+
+This isn't something I've tried but it should be pretty straightforward. You would need to have base images of the various versions of the page you are testing and then the tricky part would be in that you will need to have something on the page to be able to identify what version of the page you expect to be displayed. Once you have the images and know what version you expect to be shown you can call the 'GetDiffence' method to see if the images match. Alternatively you could say in your test I expect the following page to match one of these base images, therefore you do not have to be able to identify which version is currently loaded as long as it matches one of your expected base image versions?
+
+**Where or how do you define the images to test against?** _- Anonymous_
+
+This will differ depending on the framework you use but with the framework I used for demo purposes the base images are initially taken automatically for you. The first time you run a visual test on a page it will check if the base image you specified exists, if it doesn't it creates the base image for you and outputs a message in visual studio to notify you it's taken a new base image for you. If you were then to run the test again and something changed on the site the base image would already now exist and so would not be created again and the test would fail. Base images automatically are created when they do not exist, if you wish to change a base image this would be something you'd do manually (can differ depending on the framework/tool you use).
+
+**Where do you store the images?** _- Anonymous_
+
+Our base images get checked into our Git repository and each night the visual tests are run on our build server (Team City) and the images are compared on there. If tests fail because differences were found then these difference images are added to the artifacts for the failed tests for viewing by the team via our CI tool (Team City). We can also run the test locally using the latest images which were pulled down from the Git repository and stored locally for testing.
+
+**How do you mantain reference images?** _- Anonymous_
+
+This is currently not a problem for us as we do not have lots of images but it's something we do manually. If tests fail and we expect them to fail (because we've changed the front end of the application) we then replace the base/reference images with the updated base images. If tests fail and they should have passed then we do not then have to do anything with the base/reference images but instead would investigate the latest changes to see what the breaking changes were.
+
+**Your example shows ref images for the visual tests of your pages. How about the maintenance effort to keep them up to date comp'd to regular selenium tests?** _- Anonymous_
+
+We currently only have visual tests for a few pages and just for the Chrome WebDriver and so keeping the base/ref images up to date is very straight forward. If you wanted to keep base images for a number of different devices and drivers then this could be quite time consuming. As a team you'd have to weigh up the value the tests produce vs the time spent in having to maintain these images.
+
+**How to implement Visual Testing for rapidly developing environments, such that the tests are not breaking all the time simply because of changes?** _- Kevin_
+
+It's tricky because ideally similar to typical UI end to end tests you'd leave this until as late as possible so that you do not have to keep changing your tests. Perhaps this could be something your front end developers could use as they make changes to get feedback on whether or not they've introduced breaking changes. Unfortunately it's not something we've really had lots of issues with as we tend to focus further down the testing pyramid until the product matures enough so that we know things won't change that often before we introduce UI or visual tests.
+
+**Code is easier to maintain, but what about base images? What about testing for many sizes?** __- Anonymous__
+
+You need to weigh up what's right for you and your team? What adds the most value? You only update base images 'if' your front end changes - if it changes often you've probably tried to write your visual tests to soon and may want to let the application develop a little first where you know things are a lot less likely to change. Once your appliation has reached a point where you do not expect many changes then visual testing is for sure a lot easier to maintain compared to for example writing and maintaing Selenium UI tests. Also the value you get being able to assert colours, layouts etc gives you even more value from your checks and so to me it's a worthwhile investment. Again it's not a one size fits all and you need to see what works for you.
+
+**How You would compare a live website to a website on an integration or testing instance?** __- Helge__
+
+For us we'd have different base images when testing a live website compared to testing maybe on a test environment and the reason is that we have many teams all testing on our test environments which do not necessarily always match live.
+
+I'd really like to thank everybody who took the time to ask questions and for everybody who took the time to attend the session. You can find a copy of the slide deck over on [https://www.slideshare.net/vivrichards/spot-the-difference-automating-visual-regression-testing-97864745](SlideShare).
+
+Hopefully I've answered the above questions but if you have any further thoughts please feel free to leave a comment or tweet me [@11vlr](https://www.twitter.com/11vlr)

@@ -1,0 +1,24 @@
+- name: Spot the Difference; Automating Visual Regression Testing
+  description: "<p>This session looks at common issues with just relying on end to end automation testing tools, using examples to demonstrate common pitfalls and how visual testing can help add another tool to your tool belt.</p>
+  <p>The talk looks at why we automate tests, the issue with just manually testing, common end to end automation pitfalls, a brief introduction to visual testing and finally a look at common issues with visual testing and ways to overcome them.</p>
+  <p>Through the use of interactive examples the audience will gain an understanding of why relying on just manual testing can become an issue and how too much automation has a negative impact by looking at testing anti-patterns. The audience will also learn what visual testing is, what tools are available, some of the common pitfalls of using visual testings as well as tips on ways to overcome them based on experience of creating a custom visual test framework at my previous employer.</p>"
+  image: /images/wad2018audience.jpg
+
+- name: Automated Visual Testing; The Missing Part of your CI Pipeline?
+  description: "<p>Including tests for the design and the look of the website into your CI (Continuous Integration) automation suite is a huge step forward in ensuring mistakes don't slip through the net. Testers no longer have to play a game of spot-the-difference to find potentially high-impact mistakes, such as mis-aligned buttons that can be selected by Selenium but are hidden from a real user, or text and images accidentally changing or disappearing off screen.</p>"
+  image: /images/citalk.png
+
+- name: Exploring APIs with Postman
+  description: "<p>In this session we will look at how Postman can help you both when exploratory testing against a real application as well as to start build up automated checks to create a basic API framework.</p>
+  <p>By pushing tests further down the stack you can often gain more confidence in the software you are trying to develop and release, and shorten the feedback loops in order to adapt to changes when things don't go quite to plan.</p>
+  <p>Join this session to learn what API testing is and get started testing APIs using Postman. Whether you're totally new to Postman or API testing or you've done a little, at the end of this session you will be armed with the knowledge and skills necessary to start to help you find bugs earlier in the development process, often before the UI has been created.</p>"
+  image: /images/postman-computer-url.png
+
+- name: DevTools for Testers
+  description: "<p>Despite its name, DevTools isn’t just a tool for developers. DevTools contains many tools which can help you in your day to day testing of web applications. Whether you want to know how to put client validation to the test, gain a better understanding of how to identify and debug errors or just simply run audits on your web applications, then this course is for you.</p>
+  <p>Perhaps you’ve heard about DevTools but have never used it? Maybe you’ve used one or two of the tools within a few of the panels but don’t fully understand how some of the tools could help you. Throughout this course, we will highlight a handful of useful tools that are available.</p>
+  <p>Learning is often done best by doing, and so within each module, you will follow along with us using a website designed especially for this course, helping you to understand and make use of some of the best tools within DevTools. Each module within this course will be followed by a hands-on activity to ensure students understanding of what’s been taught before moving on to the next module.</p>
+  <p>By the end of this course, students will gain a solid understanding of how to use the demonstrated tools within DevTools and how using them can assist in their day to day testing of web applications.</p>"
+  image: /images/page-flow.png
+
+  

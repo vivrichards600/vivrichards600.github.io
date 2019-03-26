@@ -1,0 +1,45 @@
+---
+layout: page
+permalink: /talks/index.html
+title: Talks
+description: "A list of sessions I have given or plan to give"
+
+---
+
+
+<style>
+
+</style>
+<div class="talk-content">
+	<div class="talks-list">
+
+
+
+
+<p>Below you can view a list of talks I've either given previously or plan to give at an upcoming event.</p>
+
+
+{% for talk in site.data.talks %}
+ 
+ 
+  <hr>
+  
+  <h3> {{ talk.name }}</h3>
+	
+  <p><span>{{ talk.description }}</p>
+	<p><img src="{{ talk.image }}" style="width:600px;max-height:300px; overflow:hidden;"/>
+</p>
+ 
+ 
+ 
+ 
+ 
+
+   
+
+  
+{% endfor %}
+</ul>
+		
+	</div>
+</div>

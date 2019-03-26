@@ -1,0 +1,270 @@
+  - startdate: 16th April 2019
+    enddate: 
+    name: TestIstanbul Conference 2019
+    role: Keynote
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://testistanbul.org/
+    country:  Turkey
+    city:  Istanbul
+    year: 2019
+  - startdate: 28th June 2019
+    enddate:
+    name: London Testers Gathering
+    role: Workshop
+    title: DevTools for Testers
+    url:  https://www.ministryoftesting.com/events/london-tester-gathering-workshops-2019
+    country:  England
+    city:  London
+    year: 2019
+  - startdate: 9th September 2019
+    enddate:
+    name: SwanseaCon V
+    role: Organiser
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea
+    year: 2019
+  - startdate: 25th March 2019
+    enddate: 
+    name: Swansea Software Development Community
+    role: Talk
+    title:  Exploring APIs with Postman
+    url:  https://www.meetup.com/Swansea-Software-Development-Meetup/
+    country:  Wales
+    city:  Swansea
+    year: 2019
+  - startdate: 11th March 2019
+    enddate: 12th March 2019
+    name: UK Star 2019
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://ukstar.eurostarsoftwaretesting.com/
+    country:  England
+    city:  London
+    year: 2019 
+  - startdate: 7th February 2019
+    enddate: 8th February 2019
+    name: Swetugg 2019
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.swetugg.se/swetugg-2019
+    country:  Sweden
+    city:  Stockholm
+    year: 2019
+  - startdate: 19th November 2018
+    enddate: 20th November 2018
+    name: Voxxed Thessaloniki
+    role: Talk
+    title: Automated Visual Testing; The Missing Part of your CI Pipeline?
+    url:  https://voxxeddays.com/thessaloniki/
+    video: https://www.youtube.com/watch?v=6YupsPD2gcU
+    country:  Greece
+    city:  Thessaloniki
+    year: 2018
+  - startdate: 25th October 2018
+    enddate: 
+    name: Voxed Days Bristol 2018
+    role: Talk
+    title: Automated Visual Testing; The Missing Part of your CI Pipeline?
+    url:  https://voxxeddays.com/bristol/
+    country:  England
+    city:  Bristol
+    year: 2018 	
+  - startdate: 18th October 2018
+    enddate: 19th October 2018
+    name: SeleniumConf Chicago
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.seleniumconf.us/
+    video: https://www.youtube.com/watch?v=zCln-Cj_qyg
+    country:  USA
+    city:  Chicago
+    year: 2018
+  - startdate: 16th October 2018
+    enddate: 18th October 2018
+    name: TestCon Vilnius 2018
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.testcon.lt/
+    video: https://www.youtube.com/watch?v=uteYqGKws5w
+    country:  Lithuania
+    city:  Vilnius
+    year: 2018 	
+  - startdate: 27th September 2018
+    enddate:
+    name: TestBash Manchester
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.ministryoftesting.com/events/testbash-manchester-2018
+    video: https://www.ministryoftesting.com/dojo/series/testbash-manchester-2018
+    country:  England
+    city:  Manchester
+    year: 2018 	
+  - startdate: 10th September 2018
+    enddate:
+    name: SwanseaCon IV
+    role: Organiser
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea
+    year: 2018
+  - startdate: 13th August 2018
+    enddate:
+    name: Tech Nottingham
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.technottingham.com/
+    country:  England
+    city:  Nottingham
+    year: 2018  
+  - startdate: 11th June 2018
+    enddate:
+    name: Smart Devs User Group
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.meetup.com/Smart-Devs-User-Group/events/247185718/
+    country:  England
+    city:  Hereford
+    year: 2018  
+  - startdate: 22nd May 2018
+    enddate:
+    name: South. West. Test.
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.meetup.com/South-West-Test/
+    country:  England
+    city:  Bristol
+    year: 2018  
+  - startdate: 16th May 2018
+    enddate: 18th May 2018
+    name: WeAreDevelopers 2018
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.wearedevelopers.com
+    video: https://youtu.be/r-Qmoo-PvKk
+    country:  Austria
+    city:  Vienna
+    year: 2018  
+  - startdate: 2nd May 2018
+    enddate: 
+    name: Ministry of Testing Nottingham
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.meetup.com/en-AU/ministry-of-testing-nottingham/
+    country:  England
+    city:  Nottingham
+    year: 2018  
+  - startdate: 24th April 2018
+    enddate: 
+    name: Test and QA Wales Meetup
+    role: Talk
+    title: Automated Visual Testing. The Missing Part of your CI Pipeline?
+    url:  https://www.meetup.com/Cardiff-Software-Testers-Meetup/events/248898978/?eventId=248898978
+    country:  Wales
+    city:  Cardiff
+    year: 2018
+  - startdate: 21st April 2018
+    enddate:
+    name: DDD South West 2018
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  http://dddsouthwest.com/
+    country:  England
+    city:  Bristol
+    year: 2018
+  - startdate: 17th April 2018
+    enddate:
+    name: Leeds Testing Atelier VI
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  http://testingatelier.community/
+    video: https://youtu.be/fcSJhPaH2xs
+    country:  England
+    city:  Leeds
+    year: 2018
+  - startdate: 24th March 2018
+    enddate:
+    name: DDD Wales 2018
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  http://www.dddwales.com
+    country:  Wales
+    city:  Swansea
+    year: 2018
+  - startdate: 24th March 2018
+    enddate:
+    name: DDD Wales 2018
+    role: Organiser
+    url:  http://www.dddwales.com
+    country:  Wales
+    city:  Swansea
+    year: 2018
+  - startdate: 5th March 2018
+    enddate:
+    name: Pembrokeshire Devs
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.meetup.com/pembsdevs/events/247348609/
+    country:  Wales
+    city:  Pembrokeshire
+    year: 2018
+  - startdate: 14th October 2017
+    enddate:
+    name: DDD North 2017
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.dddnorth.co.uk
+    country:  England
+    city:  Bradford
+    year: 2017
+  - startdate: 25th September 2017
+    enddate: 26th September 2017
+    name: SwanseaCon III
+    role: Organiser
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea
+    year: 2017
+  - startdate: 16th September 2017
+    enddate: 
+    name: DDD East Anglia 2017
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.dddeastanglia.co.uk
+    country:  England
+    city:  Cambridge
+    year: 2017
+  - startdate: 21st August 2017
+    enddate: 
+    name: Swansea Software Development Community
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.meetup.com/Swansea-Software-Development-Meetup/
+    country:  Wales
+    city:  Swansea
+    year: 2017
+  - startdate: 2nd March 2017
+    enddate: 
+    name: Design Swansea
+    role: Talk
+    title: Q&A with Creative Industry Professionals
+    url:  http://designswansea.org.uk/
+    country:  Wales
+    city:  Swansea
+    year: 2017
+  - startdate: 12th September 2016
+    enddate: 13th September 2016
+    role: Organiser
+    name: SwanseaCon II
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea
+    year: 2016
+  - startdate: 7th September 2015
+    enddate: 8th September 2015
+    name: SwanseaCon I
+    role: Organiser
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea    
+    year: 2015
