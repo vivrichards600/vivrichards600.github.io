@@ -7,6 +7,15 @@
     country:  Turkey
     city:  Istanbul
     year: 2019
+  - startdate: 27th April 2019
+    enddate:
+    name: DDD South West 2019
+    role: Talk
+    title: (Better the DevTool you know  / Exploring APIs with Postman )
+    url:  http://dddsouthwest.com/
+    country:  England
+    city:  Bristol
+    year: 2019
   - startdate: 28th June 2019
     enddate:
     name: London Testers Gathering
