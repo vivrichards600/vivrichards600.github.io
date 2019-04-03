@@ -5,7 +5,7 @@ description:
 headline: 
 modified: 2019-03-30
 category: Testing
-tags: [testing, DevTools, JavaScript]
+tags: [Testing, DevTools, JavaScript]
 imagefeature: 
 mathjax: 
 chart: 
@@ -17,7 +17,7 @@ Often when attempting to submit a form, if you choose to do so without inputting
 
 These inputs could be taking advantage of the *required* field attribute in an attempt to get users to input a value before they can submit the form.
 
-![_config.yml]({{ site.baseurl }}/images/Chrome DevTools Required field validation.gif)
+![An example of removing required field attributes]({{ site.baseurl }}/images/Chrome DevTools Required field validation.gif)
 
 ### Removing required field attributes can help identify validation issues
 Using the DevTools console you can execute some JavaScript which will remove all *required* attributes where they exist from elements within a form, allowing you to test validation.

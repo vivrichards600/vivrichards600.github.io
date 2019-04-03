@@ -5,7 +5,7 @@ description:
 headline: 
 modified: 2019-04-01
 category: Testing
-tags: [testing, DevTools, JavaScript]
+tags: [Testing, DevTools, JavaScript]
 imagefeature: 
 mathjax: 
 chart: 
@@ -17,7 +17,7 @@ When it comes to ensuring your web applications are accessibile to all, one of t
 
 Viewing a web page this way represents the underling reading and navigation order, the order in which keyboard-only and screen reader users will access the page.
 
-![_config.yml]({{ site.baseurl }}/images/Chrome DevTools no styles.gif)
+![An example of disabling page styles]({{ site.baseurl }}/images/Chrome DevTools no styles.gif)
 
 ### Disabling stylesheets
 Using the DevTools console you can execute some JavaScript which will disable all stylesheets, allowing you to test the reading and navigation order.
