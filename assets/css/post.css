@@ -636,3 +636,10 @@ iframe {
     vertical-align: super;
     color: black;
 }
+
+
+.gist, .with-image {
+  margin: 0 auto 2em auto;
+  max-width: 56.25rem;
+  font-size: 1.125rem;
+}
