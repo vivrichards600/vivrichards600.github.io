@@ -15,7 +15,7 @@ featured: true
 
 Often when attempting to submit a form, if you choose to do so without inputting anything, you may find you are prompted to input a field value even before the form has been submitted. 
 
-These inputs are taking advantage of the *required* field attribute in an attempt to get users to input a value before they can submit the form.
+These inputs could be taking advantage of the *required* field attribute in an attempt to get users to input a value before they can submit the form.
 
 ![_config.yml]({{ site.baseurl }}/images/Chrome DevTools Required field validation.gif)
 
@@ -33,7 +33,7 @@ Using the DevTools console you can execute some JavaScript which will remove all
 
 `Array.prototype.slice.call (document.querySelectorAll('input, select')).map(function(el){el.removeAttribute('required')});`
 
-The above snippet find's all elements within the currently loaded document (web page) and find's all elements of type `input` and `select`. For each element *(el)* which is found of these types, the *required* attribute is removed from the element.
+The above snippet find's all elements within the currently loaded document (web page) and find's all elements of type *input* and *select*. For each element *(el)* which is found of these types, the *required* attribute is removed from the element.
 
 Now when you submit the form either you will now get some other validation errors displayed or maybe the form will submit..
 
