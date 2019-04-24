@@ -18,7 +18,7 @@ Sometimes elements may be styled with a fixed width. The problem with this is if
 ![Example of identifying a link styled with a fixed width with text which isn't displayed as expected]({{ site.baseurl }}/images/Chrome DevTools Test Text Length.gif)
 
 ### Identifying links styled with a fixed width where text may not be displayed as expected 
-Using the DevTools console you can execute some JavaScript which will increased a links text length in order to identify links where their text length exceeds the fixed width which is set for it.
+Using the DevTools console you can execute some JavaScript which will increase a links text length in order to identify links where their text length exceeds the fixed width which is set for it.
 
 ### To execute the JavaScript snippet
 
