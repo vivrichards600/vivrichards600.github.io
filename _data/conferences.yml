@@ -14,6 +14,24 @@
     url:  https://www.swanseacon.co.uk
     country:  Wales
     city:  Swansea
+    year: 2019
+  - startdate: 5th November 2019
+    enddate:
+    name: AgileTD 2019
+    role: Talk
+    title: Spot the Difference; Automating Visual Regression Testing
+    url:  https://agiletestingdays.com
+    country:  Germany
+    city:  Potsdam
+    year: 2019      
+  - startdate: 6th November 2019
+    enddate:
+    name: AgileTD 2019
+    role: Talk
+    title: DevTools for Testers
+    url:  https://agiletestingdays.com
+    country:  Germany
+    city:  Potsdam
     year: 2019  
   - startdate: 27th April 2019
     enddate:
