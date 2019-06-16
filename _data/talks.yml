@@ -15,10 +15,10 @@
   image: /images/postman-computer-url.png
 
 - name: DevTools for Testers
-  description: "<p>Despite its name, DevTools isn’t just a tool for developers. DevTools contains many tools which can help you in your day to day testing of web applications. Whether you want to know how to put client validation to the test, gain a better understanding of how to identify and debug errors or just simply run audits on your web applications, then this course is for you.</p>
-  <p>Perhaps you’ve heard about DevTools but have never used it? Maybe you’ve used one or two of the tools within a few of the panels but don’t fully understand how some of the tools could help you. Throughout this course, we will highlight a handful of useful tools that are available.</p>
-  <p>Learning is often done best by doing, and so within each module, you will follow along with us using a website designed especially for this course, helping you to understand and make use of some of the best tools within DevTools. Each module within this course will be followed by a hands-on activity to ensure students understanding of what’s been taught before moving on to the next module.</p>
-  <p>By the end of this course, students will gain a solid understanding of how to use the demonstrated tools within DevTools and how using them can assist in their day to day testing of web applications.</p>"
+  description: "<p>Despite its name, DevTools isn’t just a tool for developers. DevTools contains many tools which can help you in your day to day testing of web applications. Whether you want to know how to put client validation to the test, gain a better understanding of how to identify and debug errors or just simply run audits on your web applications, then this session is for you.</p>
+  <p>Perhaps you’ve heard about DevTools but have never used it? Maybe you’ve used one or two of the tools within a few of the panels but don’t fully understand how some of the tools could help you. Throughout this sessionI  will highlight a handful of useful tools that are available.</p>
+  <p>Learning is often done best by doing, and so you will be able to follow along with me using a website designed especially for this session, helping you to understand and make use of some of the best tools within DevTools.</p>
+  <p>By the end of this session attendees will gain a solid understanding of how to use the demonstrated tools within DevTools and how using them can assist in their day to day testing of web applications.</p>"
   image: /images/page-flow.png
 
   
