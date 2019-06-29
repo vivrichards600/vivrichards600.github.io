@@ -57,7 +57,7 @@
                                     {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
                                     {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
                                     {% if date > now %}
-                                        <span>{{event.title}} {{event.role}} at {{ event.name }}</span>
+                                        <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
                                     {% endif %}                    
                                 {% endfor %}
                             {% endfor %}
@@ -70,7 +70,7 @@
                                     {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
                                     {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
                                     {% if date <= now %}
-                                    <span>{{event.title}} {{event.role}} at {{ event.name }}</span>
+                                    <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
                                     {% endif %}               
                                 {% endfor %}
                             {% endfor %}
