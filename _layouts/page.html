@@ -36,6 +36,49 @@
     </ul>
 </div>
             </div>
+
+<style>
+            .notepad-content.event-bar {
+                padding:7px;
+                background-color: #221c26;
+                color:white;
+                
+    text-align: center;
+            }
+            </style>
+            <div id="bgImage" class="notepad-site-head-content" >
+                    <a href="https://vivrichards.co.uk/events" title="View events"><div class="notepad-content event-bar">
+                    
+                        <span>Upcoming Events: </span>
+        
+                            {% assign events_by_year = site.data.conferences | group_by:"year" | sort:"startdate" |  %}
+                            {% for year in events_by_year%}
+                                {% for event in year.items offset:1 limit:1 %}
+                                    {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+                                    {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
+                                    {% if date > now %}
+                                        <span>{{event.title}} {{event.role}} at {{ event.name }}</span>
+                                    {% endif %}                    
+                                {% endfor %}
+                            {% endfor %}
+        
+                            <span>| Recent Events: </span>
+                            {% assign events_by_year = site.data.conferences | group_by:"year" | %}
+                            {% for year in events_by_year  offset:0 limit:1 %}
+                            
+                                {% for event in year.items offset:0 limit:1 %}
+                                    {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+                                    {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
+                                    {% if date <= now %}
+                                    <span>{{event.title}} {{event.role}} at {{ event.name }}</span>
+                                    {% endif %}               
+                                {% endfor %}
+                            {% endfor %}
+                            
+                     </div></a>
+
+
+
             <div class="notepad-page-title row">
                 <div class="small-12 columns">
                     <h1>{{ page.title }}</h1>
