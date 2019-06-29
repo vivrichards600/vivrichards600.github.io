@@ -118,7 +118,7 @@ ul {
   <span>{{ event.startdate | date: "%e" }}-{{ event.enddate | date: "%e %B %Y" }}</span><br>
   {% endif %}
   {% if event.url == nil %}
-  <span>{{ event.name }}, ({{ event.city }}, {{ event.country }})</span
+  <span>{{ event.name }}, ({{ event.city }}, {{ event.country }})</span>
   {% else %}
   <span><a href="{{ event.url }}">{{event.name}}</a>,</span>
   {% endif %} {{ event.city }}, {{ event.country }}
