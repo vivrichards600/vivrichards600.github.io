@@ -75,8 +75,8 @@ kramdown:
 
 prose:
   rooturl: '_posts'
-  siteurl: 'http://vivrichards.co.uk/'
-  relativeLinks: 'http://vivrichards.co.uk/links.jsonp'
+  siteurl: 'https://vivrichards.co.uk/'
+  relativeLinks: 'https://vivrichards.co.uk/links.jsonp'
   media: 'images'
   metadata:
     _posts:
