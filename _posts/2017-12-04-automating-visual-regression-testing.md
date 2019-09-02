@@ -29,7 +29,7 @@ Quite often when people are shown new tools or frameworks it's very easy to get 
 
 ### Ice-cream cone anti pattern
 
-The Ice-Cream Cone anti-patte
+The Ice-Cream Cone anti-pattern
 
 > "But I don't have enough time .."
 

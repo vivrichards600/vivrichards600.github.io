@@ -15,24 +15,6 @@
     country:  Wales
     city:  Swansea
     year: 2019
-  - startdate: 5th November 2019
-    enddate:
-    name: AgileTD 2019
-    role: Talk
-    title: Spot the Difference; Automating Visual Regression Testing
-    url:  https://agiletestingdays.com
-    country:  Germany
-    city:  Potsdam
-    year: 2019      
-  - startdate: 6th November 2019
-    enddate:
-    name: AgileTD 2019
-    role: Talk
-    title: Exploring APIs with Postman
-    url:  https://agiletestingdays.com
-    country:  Germany
-    city:  Potsdam
-    year: 2019    
   - startdate: 24th June 2019
     enddate:
     name: Swansea Software Development Community

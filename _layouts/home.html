@@ -57,6 +57,8 @@
                 {% endfor %}
             {% endfor %}
 
+            
+
             <span>| Recent Events: </span>
             {% assign events_by_year = site.data.conferences | group_by:"year" | %}
             {% for year in events_by_year  offset:0 limit:1 %}
