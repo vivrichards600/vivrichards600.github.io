@@ -42,7 +42,8 @@ ul {
 
 <h2>Upcoming Events</h2>
 {% assign events_by_year = site.data.conferences | group_by:"year" | sort:"startdate" %}
-{% for year in events_by_year %}
+{% assign yearsSorted = events_by_year | sort: "name" %}
+{% for year in yearsSorted %}
 
 {% for event in year.items %}
 <ul>

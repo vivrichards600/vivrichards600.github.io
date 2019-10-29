@@ -1,0 +1,32 @@
+I"G<p>Often when attempting to submit a form, if you choose to do so without inputting anything, you may find you are prompted to input a field value even before the form has been submitted.</p>
+
+<p>These inputs could be taking advantage of the <em>required</em> field attribute in an attempt to get users to input a value before they can submit the form.</p>
+
+<p><img src="/images/Chrome DevTools Required field validation.gif" alt="An example of removing required field attributes" /></p>
+
+<h3 id="removing-required-field-attributes-can-help-identify-validation-issues">Removing required field attributes can help identify validation issues</h3>
+<p>Using the DevTools console you can execute some JavaScript which will remove all <em>required</em> attributes where they exist from elements within a form, allowing you to test validation.</p>
+
+<h3 id="to-execute-the-javascript-snippet">To execute the JavaScript snippet</h3>
+
+<ol>
+  <li>Open DevTools within Chrome :
+    <ul>
+      <li>Windows: <code>CTRL+SHIFT+J</code> OR <code>F12</code></li>
+      <li>Mac: <code>Command+Option+J</code></li>
+      <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
+    </ul>
+  </li>
+  <li>Paste the following snippet into the console tab and press <code>Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+</ol>
+
+<p><code>Array.prototype.slice.call (document.querySelectorAll('input, select')).map(function(el){el.removeAttribute('required')});</code></p>
+
+<p>The above snippet find’s all elements within the currently loaded document (web page) and find’s all elements of type <em>input</em> and <em>select</em>. For each element <em>(el)</em> which is found of these types, the <em>required</em> attribute is removed from the element.</p>
+
+<p>Now when you submit the form either you will now get some other validation errors displayed or maybe the form will submit..</p>
+
+<h3 id="find-this-useful">Find this useful?</h3>
+
+<p>Why not check out the <a href="https://github.com/eviltester/usefuljssnippetextension">UsefulJsSnippetExtension</a>.</p>
+:ET

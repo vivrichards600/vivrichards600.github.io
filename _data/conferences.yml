@@ -1,3 +1,38 @@
+  - startdate: 31st October 2019
+    enddate:
+    name: TestCon 2019
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.clavent.com/testcon-2019-london/
+    country:  England
+    city:  London
+    year: 2019
+  - startdate: 12th November 2019
+    enddate:
+    name: South Wales Test
+    role: Talk
+    title: Better the 'DevTool' you know
+    url:  https://www.meetup.com/Cardiff-Tech-Talk/events/265873207/
+    country:  Wales
+    city:  Cardiff
+    year: 2019
+  - startdate: March 2020
+    enddate:
+    name: Test Talks Wales
+    role: Talk
+    title: In pursuit of APIness
+    url:  https://www.meetup.com/Test-talks-wales/events/
+    country:  Wales
+    city:  Cardiff
+    year: 2020
+  - startdate: 9th September 2019
+    enddate:
+    name: SwanseaCon V
+    role: Organiser
+    url:  https://www.swanseacon.co.uk
+    country:  Wales
+    city:  Swansea
+    year: 2019
   - startdate: 28th June 2019
     enddate:
     name: London Testers Gathering
@@ -6,14 +41,6 @@
     url:  https://www.ministryoftesting.com/events/london-tester-gathering-workshops-2019
     country:  England
     city:  London
-    year: 2019
-  - startdate: 9th September 2019
-    enddate:
-    name: SwanseaCon V
-    role: Organiser
-    url:  https://www.swanseacon.co.uk
-    country:  Wales
-    city:  Swansea
     year: 2019
   - startdate: 24th June 2019
     enddate:

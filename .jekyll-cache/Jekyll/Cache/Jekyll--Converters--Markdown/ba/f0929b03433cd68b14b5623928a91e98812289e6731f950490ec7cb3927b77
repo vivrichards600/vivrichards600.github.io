@@ -1,0 +1,28 @@
+I"�<p>Sometimes elements may be styled with a fixed width. The problem with this is if you change the text to be displayed within the styled element, for example changing the language you wish to view the website in, then some of the text may not be displayed as expected.</p>
+
+<p><img src="/images/Chrome DevTools Test Text Length.gif" alt="Example of identifying a link styled with a fixed width with text which isn't displayed as expected" /></p>
+
+<h3 id="identifying-links-styled-with-a-fixed-width-where-text-may-not-be-displayed-as-expected">Identifying links styled with a fixed width where text may not be displayed as expected</h3>
+<p>Using the DevTools console you can execute some JavaScript which will increase a links text length in order to identify links where their text length exceeds the fixed width which is set for it.</p>
+
+<h3 id="to-execute-the-javascript-snippet">To execute the JavaScript snippet</h3>
+
+<ol>
+  <li>Open DevTools within Chrome :
+    <ul>
+      <li>Windows: <code>CTRL+SHIFT+J</code> OR <code>F12</code></li>
+      <li>Mac: <code>Command+Option+J</code></li>
+      <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
+    </ul>
+  </li>
+  <li>Paste the following snippet into the console tab and press <code>Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+</ol>
+
+<script src="https://gist.github.com/vivrichards600/c26d5e81c08baa94df0cdf0566ceb27c.js"></script>
+
+<p>The above snippet find’s all <em>a</em> (links) within the currently loaded document (web page). For each <em>link</em> which is found, we then loop through each <em>link</em> on the loaded document and increase it’s text length by appending a random string to the end of it.</p>
+
+<h3 id="find-this-useful">Find this useful?</h3>
+
+<p>Why not check out the <a href="https://github.com/eviltester/usefuljssnippetextension">UsefulJsSnippetExtension</a>.</p>
+:ET

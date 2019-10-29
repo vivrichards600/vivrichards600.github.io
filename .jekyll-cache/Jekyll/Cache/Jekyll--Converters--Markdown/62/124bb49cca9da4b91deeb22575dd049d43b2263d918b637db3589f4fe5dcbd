@@ -1,0 +1,35 @@
+I"K	<p>I’ve recently been involved in helping build a number of digital services at the <a href="https://www.gov.uk/government/organisations/driver-and-vehicle-licensing-agency">DVLA</a> (Driver &amp; Vehicle Licensing Agency). Each of the services that are built have to look consistent with the rest of <a href="http://gov.uk">GOV UK</a> and so have to follow the <a href="http://govuk-elements.herokuapp.com/">Government Service Design Manual</a> (Government Digital Services). I really enjoy using Pencil and thought I’d create some Stencils to enable people to quickly and easily create Government Digital Service prototypes for new services.</p>
+
+<p>In order to make your prototype look consistent with GOV UK services you will need to use the Transport font. <a href="http://www.urbanfonts.com/fonts/Transport_Medium.htm">Download Transport font</a>.</p>
+
+<p><em>Screenshot of custom stencils:</em></p>
+
+<p><img src="/images/gov-uk-screenshot.png" alt="_config.yml" /></p>
+
+<h2 id="installing-the-app-stencils">Installing the App Stencils</h2>
+
+<p>In order to use the App Stencils you will need to install Pencil and also download the Mobile UI stencils by following the below steps:</p>
+
+<ul>
+  <li><a href="http://pencil.evolus.vn/">download and install Pencil</a></li>
+  <li><a href="https://drive.google.com/file/d/0BypmF8SEg6CQdzdKNElpVkJrQms/view?usp=sharing">download ‘GOV UK Stencils.zip’</a></li>
+  <li><a href="http://www.urbanfonts.com/fonts/Transport_Medium.htm">download free Transport font</a></li>
+  <li>copy Transports fonts to C:\Windows\Fonts</li>
+  <li>open Pencil</li>
+  <li>within Pencil click on the ‘My Stuff’ tab</li>
+  <li>in the panel underneath the ‘My Stuff’ tab right click and select ‘Import new private collection..’</li>
+  <li>navigate to the ‘GOV UK Stencils.zip’ which you downloaded and click ‘Open’.</li>
+  <li>when prompted to install the unsigned collection, click Install</li>
+</ul>
+
+<p><img src="/images/evolus-pencil.png" alt="_config.yml" /></p>
+
+<p>I hope you find these stencils of use.</p>
+
+<h4 id="links">Links</h4>
+<p><a href="http://pencil.evolus.vn/">Download Pencil</a></p>
+
+<p><a href="https://drive.google.com/file/d/0BypmF8SEg6CQdzdKNElpVkJrQms/view?usp=sharing">Download GOV UK stencils</a></p>
+
+<p><a href="http://www.urbanfonts.com/fonts/Transport_Medium.htm">Download Transport font</a></p>
+:ET

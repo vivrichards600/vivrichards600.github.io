@@ -1,0 +1,32 @@
+I"�	<p>When developing web applications, they should be accessible to all. When you want to ensure your web application is accessible a check you will want to do is to ensure each form input element has established label relationship.</p>
+
+<blockquote>
+  <p>“When labels <em>for</em> form elements are absent, screen reader users do not know the <em>input</em> data expectations. Screen readers cannot programmatically determine information about <em>input</em> objects without an established <em>label</em> relationship (or redundant text serving as a label).” - <a href="https://dequeuniversity.com/rules/axe/3.1/label?application=lighthouse">Deque University</a></p>
+</blockquote>
+
+<p><img src="/images/Chrome DevTools input no label.gif" alt="Example of identifying an input without an associated label" /></p>
+
+<h3 id="identifying-inputs-with-no-established-label-relationship">Identifying inputs with no established label relationship</h3>
+<p>Using the DevTools console you can execute some JavaScript which will highlight any <em>input</em> which does not have a <em>label</em> associated with it.</p>
+
+<h3 id="to-execute-the-javascript-snippet">To execute the JavaScript snippet</h3>
+
+<ol>
+  <li>Open DevTools within Chrome :
+    <ul>
+      <li>Windows: <code>CTRL+SHIFT+J</code> OR <code>F12</code></li>
+      <li>Mac: <code>Command+Option+J</code></li>
+      <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
+    </ul>
+  </li>
+  <li>Paste the following snippet into the console tab and press <code>Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+</ol>
+
+<script class="notepad-post-content post" src="https://gist.github.com/vivrichards600/7032395fe59d345d3a0163213e054fa3.js"></script>
+
+<p>The above snippet find’s all <em>inputs</em> and <em>labels</em> within the currently loaded document (web page). For each <em>input</em> which is found, we then loop through each <em>label</em> on the loaded document and check it’s <em>for</em> attribute. If we do not find any labels that have a <em>for</em> attribute that matches any input <em>id</em> we then know we’ve found a form input without a corresponding label. The <em>for</em> attribute’s value of a label must be the <em>id</em> of the input it is associated with.</p>
+
+<h3 id="find-this-useful">Find this useful?</h3>
+
+<p>Why not check out the <a href="https://github.com/eviltester/usefuljssnippetextension">UsefulJsSnippetExtension</a>.</p>
+:ET

@@ -45,32 +45,14 @@
 <a href="https://vivrichards.co.uk/events" title="View events"><div class="notepad-content event-bar">
             
         <span>Upcoming Events: </span>
+        {% for event in site.data.conferences limit:1 %}
+            {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+            {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
+            {% if date > now %}
+                <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
+            {% endif %}                    
+        {% endfor %}
 
-            {% assign events_by_year = site.data.conferences | group_by:"year" | sort:"startdate" |  %}
-            {% for year in events_by_year%}
-                {% for event in year.items offset:1 limit:1 %}
-                    {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-                    {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
-                    {% if date > now %}
-                        <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
-                    {% endif %}                    
-                {% endfor %}
-            {% endfor %}
-
-            
-
-            <span>| Recent Events: </span>
-            {% assign events_by_year = site.data.conferences | group_by:"year" | %}
-            {% for year in events_by_year  offset:0 limit:1 %}
-            
-                {% for event in year.items offset:0 limit:1 %}
-                    {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-                    {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
-                    {% if date <= now %}
-                    <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
-                    {% endif %}               
-                {% endfor %}
-            {% endfor %}
             
      </div></a>
 

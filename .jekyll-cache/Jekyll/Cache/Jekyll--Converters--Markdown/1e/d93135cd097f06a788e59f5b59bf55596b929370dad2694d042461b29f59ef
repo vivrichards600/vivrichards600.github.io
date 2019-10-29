@@ -1,0 +1,30 @@
+I"’<p>When it comes to ensuring your web applications are accessibile to all, one of the checks you may wish to carry out is to see how your page is displayed with stylesheets disabled.</p>
+
+<p>Viewing a web page this way represents the underling reading and navigation order, the order in which keyboard-only and screen reader users will access the page.</p>
+
+<p><img src="/images/Chrome DevTools no styles.gif" alt="An example of disabling page styles" /></p>
+
+<h3 id="disabling-stylesheets">Disabling stylesheets</h3>
+<p>Using the DevTools console you can execute some JavaScript which will disable all stylesheets, allowing you to test the reading and navigation order.</p>
+
+<h3 id="to-execute-the-javascript-snippet">To execute the JavaScript snippet</h3>
+
+<ol>
+  <li>Open DevTools within Chrome :
+    <ul>
+      <li>Windows: <code>CTRL+SHIFT+J</code> OR <code>F12</code></li>
+      <li>Mac: <code>Command+Option+J</code></li>
+      <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
+    </ul>
+  </li>
+  <li>Paste the following snippet into the console tab and press <code>Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+</ol>
+
+<p><code>Array.prototype.slice.call (document.styleSheets).map(function(el){el.disabled = true;});</code></p>
+
+<p>The above snippet findâ€™s all stylesheets within the currently loaded document (web page). For each stylesheet <em>(el)</em> which is found, the stylesheet is then disabled.</p>
+
+<h3 id="find-this-useful">Find this useful?</h3>
+
+<p>Why not check out the <a href="https://github.com/eviltester/usefuljssnippetextension">UsefulJsSnippetExtension</a>.</p>
+:ET
