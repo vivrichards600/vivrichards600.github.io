@@ -1,12 +1,3 @@
-  - startdate: 7th November 2019
-    enddate:
-    name: TestCon 2019
-    role: Talk
-    title: Spot the difference; Automating Visual Regression Testing
-    url:  https://www.clavent.com/testcon-2019-london/
-    country:  England
-    city:  London
-    year: 2019
   - startdate: 12th November 2019
     enddate:
     name: South Wales Test
@@ -25,6 +16,15 @@
     country:  Wales
     city:  Cardiff
     year: 2020
+  - startdate: 7th November 2019
+    enddate:
+    name: TestCon 2019
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.clavent.com/testcon-2019-london/
+    country:  England
+    city:  London
+    year: 2019
   - startdate: 9th September 2019
     enddate:
     name: SwanseaCon V
