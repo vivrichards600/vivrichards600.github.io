@@ -37,7 +37,7 @@ WCAG 2.0 references
 
 ## Page structure
 
-Are you are using semantic elements and roles. It's important because a user of your site may be low-sighted and so may need to navigate around the page by jumping to the page section they want to get to.
+Are you are using semantic elements and roles? It's important because a user of your site may be low-sighted and so may need to navigate around the page by jumping to the page section they want to get to.
 
 The [WAVE browser extension](http://wave.webaim.org/extension/) is available for both Chrome and Firefox. After installing the tool simply navigate to the page you want to check and then press the WAVE icon within your toolbar. "You will notice a new sidebar popup and WAVE will present your page with embedded icons and indicators. Each icon, box, and piece of information added by WAVE presents some information about the accessibility of your page." 
 
@@ -45,7 +45,7 @@ Within the sidebar you can view details of the structual elements of your page, 
 
 ![_config.yml]({{ site.baseurl }}/images/wave-page-structure.gif)
 
-It's also possible to check if your page is structured in a logical by disabling all stylesheets using a little bit of JavaScript. [Click here to view my previous post on this method](http://localhost:4000/accessibility/removing-style-sheets).
+It's also possible to check if your page is structured in a logical way by disabling all stylesheets using a little bit of JavaScript. [Click here to view my previous post on this method](http://localhost:4000/accessibility/removing-style-sheets).
 
 As well as offering a nice way to visualise the tab flow through your application (mentioned above), [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) also offers 'Lenses', visual impairment simulation. This tool lets you see how the page looks through the eyes of someone with vision issues. 
 
@@ -65,11 +65,11 @@ WCAG 2.0 references
 
 
 ## Images
-Are you providing text alternatives for people who cannot see images. It's important because a user of your site may be blind and so uses a screen reader to read the alt text in order to understand the contents of an image.
+Are you providing text alternatives for people who cannot see images? It's important because a user of your site may be blind and so uses a screen reader to read the alt text in order to understand the contents of an image.
 
 One of the easiest ways to check for alt tags is to use the [WAVE browser extension](http://wave.webaim.org/extension/) which was mentioned earlier. Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see any image alt tag issues reported in the summary withing the errors section.
 
-Another way to check for any images which do not contain alt tags is to use the [Useful Snippet Chrome Extension](https://github.com/eviltester/usefuljssnippetextension). This extension once installed provides various useful snippets within the extension. Once you have run a snippet it's code is also copied to the DevTools console enabling you to     copy the JavaScript snippet code or to create a bookmarklet so you do not need to keep using the Chrome extension if you do not wish to.
+Another way to check for any images which do not contain alt tags is to use the [Useful Snippet Chrome Extension](https://github.com/eviltester/usefuljssnippetextension). This extension once installed provides various useful snippets within the extension. Once you have run a snippet it's code is also copied to the DevTools console enabling you to copy the JavaScript snippet code to execute elsewhere or to create a bookmarklet so you do not need to keep using the Chrome extension if you do not wish to.
 
 ![_config.yml]({{ site.baseurl }}/images/useful-snippet-alt-highlight.gif)
 
@@ -86,15 +86,15 @@ WCAG 2.0 references
 
 ## Colour and contrast
 
-Are you using enough contrast between text and its background colour. It's important because a user of your site may have low vision and so needs content to have enough contrast to read it.
+Are you using enough contrast between text and its background colour? It's important because a user of your site may have low vision and so needs content to have enough contrast to read it.
 
 A simple way to check for colour contrast issues is to use the [WAVE browser extension](http://wave.webaim.org/extension/). Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see details of any contrast issues. There is also a contrast tab where you can provide colours in order to test the contrast ratio of a given text and background colour.
 
-![_config.yml]({{ site.baseurl }}/images/wave-contrast.png)
+![_config.yml]({{ site.baseurl }}/images/wave-contrast.PNG)
 
 Within Chrome if you didn't know there are some DevTools built in to the browser. If your 'lucky' enough to be on a windows machine :) - and the machine isn't locked down by some work policy you should be able to press'F12' and the DevTool window will popup. On the far right of the DevTools popup window you will see an Audits link. Simply click on this link, pick which options you want included in your report and then click on 'Run audits'. Here you can generate an accessibility report which includes checking colour and contrast.
 
-![_config.yml]({{ site.baseurl }}/images/lighthouse.png)
+![_config.yml]({{ site.baseurl }}/images/lighthouse.PNG)
 
 As I mentioned earlier, don’t use colour alone to convey meaning. Use icons, text, and other visual elements to reinforce the meaning of the content.
 
