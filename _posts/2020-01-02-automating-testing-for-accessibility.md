@@ -19,7 +19,7 @@ I've previously blogged a little about accessibility, but in this blog post I wa
 
 ## Keyboard access
 
-These guidelines cover a number of things like are you able to reach everything that's interactive using the tab key? Can you also interact with the elements using space-bar, enter key, are things focusable, labeled appropriately etc. It's important because a user may be unable to use a mouse; instead, they may use just the keyboard to navigate the web.
+Are you able to reach everything that's interactive using the tab key? Can you also interact with the elements using space-bar, enter key, are things focusable, labeled appropriately etc. It's important because a user may be unable to use a mouse; instead, they may use just the keyboard to navigate the web.
 
 When thinking about testing the tab flow you could simply load up your web application and tab through each field, but what if we could start to quickly visualise this, or maybe we may still want to tab through manually but save the visual flow to attach to a story we are testing? 
 
@@ -37,7 +37,7 @@ WCAG 2.0 references
 
 ## Page structure
 
-These guidelines look to see whether you are using semantic elements and roles. It's important because a user of your site may be low-sighted and so may need to navigate around the page by jumping to the page section they want to get to.
+Are you are using semantic elements and roles. It's important because a user of your site may be low-sighted and so may need to navigate around the page by jumping to the page section they want to get to.
 
 The [WAVE browser extension](http://wave.webaim.org/extension/) is available for both Chrome and Firefox. After installing the tool simply navigate to the page you want to check and then press the WAVE icon within your toolbar. "You will notice a new sidebar popup and WAVE will present your page with embedded icons and indicators. Each icon, box, and piece of information added by WAVE presents some information about the accessibility of your page." 
 
@@ -65,7 +65,7 @@ WCAG 2.0 references
 
 
 ## Images
-These guidelines relate to non-text content and providing text alternatives for people who cannot see images. It's important because a user of your site may be blind and so uses a screen reader to read the alt text in order to understand the contents of an image.
+Are you providing text alternatives for people who cannot see images. It's important because a user of your site may be blind and so uses a screen reader to read the alt text in order to understand the contents of an image.
 
 One of the easiest ways to check for alt tags is to use the [WAVE browser extension](http://wave.webaim.org/extension/) which was mentioned earlier. Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see any image alt tag issues reported in the summary withing the errors section.
 
@@ -86,7 +86,7 @@ WCAG 2.0 references
 
 ## Colour and contrast
 
-This guideline helps to ensure that there is enough contrast between text and its background colour. It's important because a user of your site may have low vision and so needs content to have enough contrast to read it.
+Are you using enough contrast between text and its background colour. It's important because a user of your site may have low vision and so needs content to have enough contrast to read it.
 
 A simple way to check for colour contrast issues is to use the [WAVE browser extension](http://wave.webaim.org/extension/). Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see details of any contrast issues. There is also a contrast tab where you can provide colours in order to test the contrast ratio of a given text and background colour.
 
