@@ -4,7 +4,7 @@ title: Automating page tabability (is that a word?) with visual testing
 description: 
 headline: 
 modified: 2018-11-06
-category: Testing
+category: Accessibility
 tags: [accessibility testing, visual testing, usability, automation]
 imagefeature: 
 mathjax: 

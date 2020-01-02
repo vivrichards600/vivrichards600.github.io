@@ -4,8 +4,8 @@ title: "Chrome DevTools: No Styles"
 description: 
 headline: 
 modified: 2019-04-01
-category: Testing
-tags: [Testing, DevTools, JavaScript]
+category: Accessibility
+tags: [Testing, DevTools, JavaScript, Accessibility]
 imagefeature: 
 mathjax: 
 chart: 

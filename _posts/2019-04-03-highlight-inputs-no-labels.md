@@ -4,8 +4,8 @@ title: "Chrome DevTools: Identifying form inputs with no labels"
 description: 
 headline: 
 modified: 2019-04-03
-category: Testing
-tags: [Testing, DevTools, JavaScript]
+category: Accessibility
+tags: [Testing, DevTools, JavaScript, Accessibility]
 imagefeature: 
 mathjax: 
 chart: 
