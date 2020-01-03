@@ -23,7 +23,7 @@ Are you able to reach everything that's interactive using the tab key? Can you a
 
 When thinking about testing the tab flow you could simply load up your web application and tab through each field, but what if we could start to quickly visualise this, or maybe we may still want to tab through manually but save the visual flow to attach to a story we are testing? 
 
-I've previously written a few ways you could do this using [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) and/or using [JavaScript](https://github.com/eviltester/usefuljssnippetextension) in the browser which you can find here - [Automating page tabability](https://vivrichards.co.uk/accessibility/automating-page-tab-flows-using-visual-testing-and-javascript). 
+I've previously written a few ways you could do this using [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) and/or using [JavaScript](https://github.com/eviltester/usefuljssnippetextension) in the browser which you can find here - [Automating page tabability]({{ site.baseurl }}/accessibility/automating-page-tab-flows-using-visual-testing-and-javascript). 
 
 ![_config.yml]({{ site.baseurl }}/images/chrome-lens-flow.png)
 
@@ -45,7 +45,7 @@ Within the sidebar you can view details of the structual elements of your page, 
 
 ![_config.yml]({{ site.baseurl }}/images/wave-page-structure.gif)
 
-It's also possible to check if your page is structured in a logical way by disabling all stylesheets using a little bit of JavaScript. [Click here to view my previous post on this method](http://localhost:4000/accessibility/removing-style-sheets).
+It's also possible to check if your page is structured in a logical way by disabling all stylesheets using a little bit of JavaScript. [Click here to view my previous post on this method]({{ site.baseurl }}/accessibility/removing-style-sheets).
 
 As well as offering a nice way to visualise the tab flow through your application (mentioned above), [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en) also offers 'Lenses', visual impairment simulation. This tool lets you see how the page looks through the eyes of someone with vision issues. 
 
@@ -92,7 +92,7 @@ A simple way to check for colour contrast issues is to use the [WAVE browser ext
 
 ![_config.yml]({{ site.baseurl }}/images/wave-contrast.PNG)
 
-Within Chrome if you didn't know there are some DevTools built in to the browser. If your 'lucky' enough to be on a windows machine :) - and the machine isn't locked down by some work policy you should be able to press'F12' and the DevTool window will popup. On the far right of the DevTools popup window you will see an Audits link. Simply click on this link, pick which options you want included in your report and then click on 'Run audits'. Here you can generate an accessibility report which includes checking colour and contrast.
+Within Chrome if you didn't know there are some DevTools built in to the browser. If your 'lucky' enough to be on a windows machine you should be able to press CTRL+SHIFT+J OR F12 or Command+Option+J on a Mac and the DevTool window will popup. On the far right of the DevTools popup window you will see an Audits link. Simply click on this link, pick which options you want included in your report and then click on 'Run audits'. Here you can generate an accessibility report which includes checking colour and contrast.
 
 ![_config.yml]({{ site.baseurl }}/images/lighthouse.PNG)
 

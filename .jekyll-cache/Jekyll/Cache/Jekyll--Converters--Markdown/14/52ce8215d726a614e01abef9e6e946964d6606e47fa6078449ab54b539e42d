@@ -1,4 +1,4 @@
-I"�$<p>Accessibility is about making sure everybody, regardless of their abilities can access, understand, and navigate web content, regardless of how they’re accessing it. It is recommended that accessibility testing is conducted throughout the design and development process.</p>
+I"^$<p>Accessibility is about making sure everybody, regardless of their abilities can access, understand, and navigate web content, regardless of how they’re accessing it. It is recommended that accessibility testing is conducted throughout the design and development process.</p>
 
 <p>I’ve previously blogged a little about accessibility, but in this blog post I want to share a number of different ways in which you can start to automate testing for accessibility. It’s important to note that although we will be looking at various ways to automate catching accessibility errors, these do not guarantee that your site is accessible. The absence of errors DOES NOT mean your page is accessible or compliant. Always combine automated testing with ongoing manual testing. Manual testing is the most reliable method to assess accessibility.</p>
 
@@ -8,7 +8,7 @@
 
 <p>When thinking about testing the tab flow you could simply load up your web application and tab through each field, but what if we could start to quickly visualise this, or maybe we may still want to tab through manually but save the visual flow to attach to a story we are testing?</p>
 
-<p>I’ve previously written a few ways you could do this using <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">ChromeLens</a> and/or using <a href="https://github.com/eviltester/usefuljssnippetextension">JavaScript</a> in the browser which you can find here - <a href="https://vivrichards.co.uk/accessibility/automating-page-tab-flows-using-visual-testing-and-javascript">Automating page tabability</a>.</p>
+<p>I’ve previously written a few ways you could do this using <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">ChromeLens</a> and/or using <a href="https://github.com/eviltester/usefuljssnippetextension">JavaScript</a> in the browser which you can find here - <a href="/accessibility/automating-page-tab-flows-using-visual-testing-and-javascript">Automating page tabability</a>.</p>
 
 <p><img src="/images/chrome-lens-flow.png" alt="_config.yml" /></p>
 
@@ -33,7 +33,7 @@
 
 <p><img src="/images/wave-page-structure.gif" alt="_config.yml" /></p>
 
-<p>It’s also possible to check if your page is structured in a logical way by disabling all stylesheets using a little bit of JavaScript. <a href="http://localhost:4000/accessibility/removing-style-sheets">Click here to view my previous post on this method</a>.</p>
+<p>It’s also possible to check if your page is structured in a logical way by disabling all stylesheets using a little bit of JavaScript. <a href="/accessibility/removing-style-sheets">Click here to view my previous post on this method</a>.</p>
 
 <p>As well as offering a nice way to visualise the tab flow through your application (mentioned above), <a href="https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en">ChromeLens</a> also offers ‘Lenses’, visual impairment simulation. This tool lets you see how the page looks through the eyes of someone with vision issues.</p>
 
@@ -59,7 +59,7 @@
 
 <p>One of the easiest ways to check for alt tags is to use the <a href="http://wave.webaim.org/extension/">WAVE browser extension</a> which was mentioned earlier. Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see any image alt tag issues reported in the summary withing the errors section.</p>
 
-<p>Another way to check for any images which do not contain alt tags is to use the <a href="https://github.com/eviltester/usefuljssnippetextension">Useful Snippet Chrome Extension</a>. This extension once installed provides various useful snippets within the extension. Once you have run a snippet it’s code is also copied to the DevTools console enabling you to     copy the JavaScript snippet code or to create a bookmarklet so you do not need to keep using the Chrome extension if you do not wish to.</p>
+<p>Another way to check for any images which do not contain alt tags is to use the <a href="https://github.com/eviltester/usefuljssnippetextension">Useful Snippet Chrome Extension</a>. This extension once installed provides various useful snippets within the extension. Once you have run a snippet it’s code is also copied to the DevTools console enabling you to copy the JavaScript snippet code to execute elsewhere or to create a bookmarklet so you do not need to keep using the Chrome extension if you do not wish to.</p>
 
 <p><img src="/images/useful-snippet-alt-highlight.gif" alt="_config.yml" /></p>
 
@@ -82,11 +82,11 @@
 
 <p>A simple way to check for colour contrast issues is to use the <a href="http://wave.webaim.org/extension/">WAVE browser extension</a>. Once you have installed the extension, click on the WAVE icon and within the sidebar popup you will see details of any contrast issues. There is also a contrast tab where you can provide colours in order to test the contrast ratio of a given text and background colour.</p>
 
-<p><img src="/images/wave-contrast.png" alt="_config.yml" /></p>
+<p><img src="/images/wave-contrast.PNG" alt="_config.yml" /></p>
 
-<p>Within Chrome if you didn’t know there are some DevTools built in to the browser. If your ‘lucky’ enough to be on a windows machine :) - and the machine isn’t locked down by some work policy you should be able to press’F12’ and the DevTool window will popup. On the far right of the DevTools popup window you will see an Audits link. Simply click on this link, pick which options you want included in your report and then click on ‘Run audits’. Here you can generate an accessibility report which includes checking colour and contrast.</p>
+<p>Within Chrome if you didn’t know there are some DevTools built in to the browser. If your ‘lucky’ enough to be on a windows machine you should be able to press CTRL+SHIFT+J OR F12 or Command+Option+J on a Mac and the DevTool window will popup. On the far right of the DevTools popup window you will see an Audits link. Simply click on this link, pick which options you want included in your report and then click on ‘Run audits’. Here you can generate an accessibility report which includes checking colour and contrast.</p>
 
-<p><img src="/images/lighthouse.png" alt="_config.yml" /></p>
+<p><img src="/images/lighthouse.PNG" alt="_config.yml" /></p>
 
 <p>As I mentioned earlier, don’t use colour alone to convey meaning. Use icons, text, and other visual elements to reinforce the meaning of the content.</p>
 
