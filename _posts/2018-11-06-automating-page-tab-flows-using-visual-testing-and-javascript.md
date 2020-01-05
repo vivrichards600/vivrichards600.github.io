@@ -26,9 +26,8 @@ Whilst this is a fantastic browser extension I am always looking at new approach
 Today I started to look at how we could automate similar functionality to ChromeLens but using pure javascript to draw the flow, with the idea of then using visual testing to then take a screenshot of the page flow and see if the flow still is as expected. This would enable teams to start to automate visual testing of page flows for web applications!
 
 Below is the JSFiddle code I created to draw the flow on the web page.
-<script async src="//jsfiddle.net/11vlr/oeaf1mcb/2/embed/"></script>
+<script async src="//jsfiddle.net/11vlr/o5vckrbh/embed/"></script>
 
-![_config.yml]({{ site.baseurl }}/images/page-flow.png)
 
 Using the [visual testing code](https://github.com/vivrichards600/AutomatedVisualTesting) example project I have made on GitHub the idea would be to use the WebDriver to inject the above javascript into a webpage to draw the flow, then take a snapshot and then do the visual comparison.
 
