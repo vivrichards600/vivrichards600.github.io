@@ -1,3 +1,39 @@
+  - startdate: 1st March 2020
+    enddate: 
+    name: Tech Talk Wales
+    role: Talk
+    title: In pursuit of hAPIness
+    url: https://www.meetup.com/Test-talks-wales/
+    country:  Wales
+    city:  Cardiff
+    year: 2020
+  - startdate: 19th March 2020
+    enddate: 
+    name: DigiCon (Direct Line Group - internal conference)
+    role: Talk
+    title: TBC
+    url: 
+    country:  England
+    city:  London
+    year: 2020
+  - startdate: 12th May 2020
+    enddate:
+    name: DevTalks Cluj
+    role: Talk
+    title: TBC
+    url:  https://www.devtalks.ro/cluj/
+    country:  Romania
+    city:  Cluj
+    year: 2019
+  - startdate: 11th June 2020
+    enddate:
+    name: DevTalks Bucharest
+    role: Talk
+    title: TBC
+    url:  https://www.devtalks.ro/bucharest/
+    country:  Romania
+    city:  Bucharest
+    year: 
   - startdate: 12th November 2019
     enddate:
     name: South Wales Test
@@ -7,15 +43,6 @@
     country:  Wales
     city:  Cardiff
     year: 2019
-  - startdate: March 2020
-    enddate:
-    name: Test Talks Wales
-    role: Talk
-    title: In pursuit of APIness
-    url:  https://www.meetup.com/Test-talks-wales/events/
-    country:  Wales
-    city:  Cardiff
-    year: 2020
   - startdate: 7th November 2019
     enddate:
     name: TestCon 2019
