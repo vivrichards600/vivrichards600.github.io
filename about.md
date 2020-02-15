@@ -6,7 +6,7 @@ tags: [Viv, Richards]
 imagefeature: viv.jpg
 chart: true
 ---
-Not the cricketer! I am the Lead QA consultant at <a href="http://rubberduckconsulting.co.uk/" target="_blank">Rubber Duck Consulting</a>, an International speaker, conference organiser and facilitator. In my spare time I enjoy teaching children to code as a CodeClub volunteer as well as spending time with my wife, 5 children, 2 chickens and dog.
+Not the cricketer! I am the Lead QA consultant at <a href="http://rubberduckconsulting.co.uk/" target="_blank">Rubber Duck Consulting</a>, an International speaker, conference organiser and facilitator. In my spare time I enjoy teaching children to code as a CodeClub volunteer as well as spending time with my wife, 5 children, chicken and dog.
 
 <figure>
   <img src="{{ site.url }}/images/viv.jpg" alt="Viv Richards">

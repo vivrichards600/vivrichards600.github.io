@@ -41,9 +41,24 @@ ul {
 
 
 <h2>Upcoming Events</h2>
-{% assign events_by_year = site.data.conferences | group_by:"year" | sort:"startdate" %}  
+{% assign events_by_year = site.data.conferences | group_by:"year"  %}  
 {% assign yearsSorted = events_by_year | sort: "name" %}
 {% for year in yearsSorted %}
+
+{% for event in year.items %}
+
+
+
+
+{% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
+  {% if date > now %}
+	
+  <hr>
+  
+
+{% assign events_by_year = site.data.conferences | group_by:"year" %}
+{% for year in events_by_year %}
 
 {% for event in year.items %}
 <ul>
@@ -56,8 +71,44 @@ ul {
   {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
   {% if date > now %}
 	
-  <hr>
   
+  {% if event.enddate == nil %}
+    {% if event.year > 2016 %}
+    <span>{{ event.startdate | date: "%e %B %Y" }}</span><br>
+    {% else %}
+    <span>{{ event.startdate | date: "%B %Y" }}</span><br>
+    {% endif %}
+  {% else %}
+  <span>{{ event.startdate | date: "%e" }}-{{ event.enddate | date: "%e %B %Y" }}</span><br>
+  {% endif %}
+  {% if event.url == nil %}
+  <span>{{ event.name }}, ({{ event.city }}, {{ event.country }})</span>
+  {% else %}
+  <span><a href="{{ event.url }}">{{event.name}}</a>,</span>
+  {% endif %} {{ event.city }}, {{ event.country }}
+  
+  {% if event.title != nil %}
+  <br ><span>{{event.role}}: {{event.title}}</span>
+ 
+ {% else %} 
+	
+	<br ><span>Event Organiser</span>  
+	 
+  {% endif %}
+ 
+     {% if event.video != nil %}
+  <br><i class="material-icons">video_library</i> <span><a href="{{ event.video }}">{{event.video}}</a></span>
+  {% endif %}
+
+</ul>
+  {% endif %}
+ 
+
+{% endfor %}
+
+{% endfor %}
+
+<!--   
   {% if event.enddate == nil %}
     {% if event.year > 2016 %}
     <span>{{ event.startdate | date: "%e %B %Y" }}</span><br>
@@ -89,7 +140,7 @@ ul {
 
 {% endfor %}
 
-{% endfor %}
+{% endfor %} -->
 
 
 <h2 style="margin-top:20px !important;">Past Events</h2>
