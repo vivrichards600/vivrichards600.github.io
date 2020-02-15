@@ -25,6 +25,10 @@ This book contains reflections and thoughts based on many people's own personal 
 
 This book will continue to evolve. When new contributions are received they will be reviewed, added to the book and then a new version of this book will be published. This process will continue until the book contains 80 software testers from all around the world.
 
+I've created a custom Google map where you can [see who has agreed to contribute to this book](https://www.google.com/maps/d/viewer?mid=1ikyYyCoRpE_G2DEJjNnI2rTPDxYbb6jh&ll=17.007883555341067%2C-64.91391224999995&z=2).
+
+<p><iframe src="https://www.google.com/maps/d/embed?mid=1ikyYyCoRpE_G2DEJjNnI2rTPDxYbb6jh" width="640" height="480"></iframe></p>
+
 ## Download the book
 
 Thank you again to Lisa and everybody who has taken an interest and helped with the book.
