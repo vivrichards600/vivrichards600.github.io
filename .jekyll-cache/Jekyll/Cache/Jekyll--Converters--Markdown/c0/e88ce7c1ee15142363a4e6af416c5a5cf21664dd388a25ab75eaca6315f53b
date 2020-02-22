@@ -1,0 +1,29 @@
+I"�
+<p>This week I was <a href="https://twitter.com/wswebcreation/status/1230769653007310851">mentioned in a tweet by Wim Selles</a>.</p>
+
+<p>Wim had written some code to do an image comparison of a pages tabbability which is something I had blogged and spoken about before at various events. <a href="http://localhost:4000/testing/visual-testing-digging-deeper">I have previously also written how visual checking could help check pdfs, tabbability for accessibility and chart rendering</a> but the tweet got me thinking, what other things could visual checking assist with when checking web pages?</p>
+
+<p>I’m a contributor to the <a href="https://github.com/eviltester/usefuljssnippetextension">useful snippets Chrome extension created by the awesome Alan Richardson</a> and within this extension together we have written lots of really cool (if I do say so myself) snippets and so I wanted to see if any could be used along with visual checking to get quicker feedback when things don’t look or perhaps work as we expected.</p>
+
+<p>The things I wanted to check and highlight in my visual checks were:</p>
+<ul>
+  <li>Are there any images on my page with no alt tags</li>
+  <li>Are there any inputs on my page which do not have associated labels</li>
+  <li>Are there any broken links on my page</li>
+</ul>
+
+<p>If any of the above were true I decided that I would draw a pink border around the problems. In reality you may want to do something like add text or an icon to highlight what type of issue was found but I decided to keep this proof of concept fairly simple.</p>
+
+<p>Using the <a href="https://github.com/vivrichards600/AutomatedVisualTesting">visual testing code</a> example project I have made on GitHub I wrote a very quick and dirty test to check the above (no alt tags, inputs with no labels, broken links).</p>
+
+<p><img src="/images/a11y-issues.png" alt="_config.yml" /></p>
+
+<p>Below is the rather ugly but working code I created which enabled me to do the above visual checks.
+<script src="https://gist.github.com/vivrichards600/f324c3801529dbaf3e66cf327c25b2d2.js"></script></p>
+
+<p>Ideally you’d use this code within something like <a href="https://applitools.com/">AppliTools</a> which in my opinion is leaps and bounds ahead of the rest when it comes to visual validation but at the end of the day it’s just JavaScript being injected in to a page via the browsers <code>ExecuteJavaScript</code> method so could be used in any visual checking framework.</p>
+
+<p>I have not updated the <a href="https://github.com/vivrichards600/AutomatedVisualTesting">visual testing code</a> project with this example but wanted to share this idea to get people to start thinking about other ways that visual testing could be really useful!</p>
+
+<p>As always any feedback and comments are welcome.</p>
+:ET
