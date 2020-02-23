@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automating visual checking of alt tags, labels and broken links
+title: Automating visual checking of alt tags, labels, broken links and duplicate ids
 description: 
 headline: 
 modified: 2018-11-06
@@ -23,6 +23,7 @@ The things I wanted to check and highlight in my visual checks were:
 * Are there any images on my page with no alt tags
 * Are there any inputs on my page which do not have associated labels
 * Are there any broken links on my page
+* Are there any elements on my page with the same ids
 
 If any of the above were true I decided that I would draw a pink border around the problems. In reality you may want to do something like add text or an icon to highlight what type of issue was found but I decided to keep this proof of concept fairly simple.
 
