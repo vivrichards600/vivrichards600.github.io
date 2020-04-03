@@ -7,15 +7,6 @@
     country:  Wales
     city:  Cardiff
     year: 2020
-  - startdate: 19th March 2020
-    enddate: 
-    name: DigiCon (Direct Line Group - internal conference)
-    role: Talk
-    title: TBC
-    url: 
-    country:  England
-    city:  London
-    year: 2020
   - startdate: 12th May 2020
     enddate:
     name: DevTalks Cluj
