@@ -31,6 +31,8 @@ If you would like to hear from Lena and/or have any questions you’d like to as
 
 You can join us by visiting this link [http://meet.jit.si/TalkingTheWorldWith80Testers]( http://meet.jit.si/TalkingTheWorldWith80Testers) on Tuesday from 7:00 pm.
 
+<a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20200421T190000Z%2F20200421T194500Z&text=%231%20Talking%20the%20world%20with%2080%20testers%20-%20Lena%20Pejgan%20Wiberg&location=https%3A%2F%2Fmeet.jit.si%2FTalkingTheWorldWith80Testers&details=In%20this%20webinar%20we%20will%20be%20remotely%20joining%20Lena%20Pejgan%20Wiberg%20in%20Sweden%20where%20we%20will%20chat%20more%20about%20her%20book%20contribution%20titled%20%E2%80%9CFrom%20Dev%20to%20Tester%E2%80%9D%20(currently%20page%20105%20in%20the%20book)."><img src="/images/addtocal.gif"/></a>
+
 ## Got the t-shirt but not got the book ;-) ?
 
 If you haven’t already read the book, head over to leanpub and grab your free copy -  “[Around the World with 80 Software Testers](https://leanpub.com/AroundTheWorldWith80SoftwareTesters)“ 
