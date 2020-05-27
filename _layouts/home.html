@@ -7,9 +7,9 @@
 <header class="notepad-site-head">
     <div class="notepad-site-head-menu">
         <a class="notepad-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
-        
-        
-        <div class="notepad-blog-menu">      
+
+
+        <div class="notepad-blog-menu">
     <div class="notepad-mobile-menu show-for-small">
         <a href="#"><i class="fa fa-bars"></i></a>
     </div>
@@ -23,7 +23,7 @@
             {% else %}
             <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
             {% endif %} </li>
-{% endfor %}            
+{% endfor %}
     </ul>
 </div>
         <div class="clearfix"></div>
@@ -41,23 +41,23 @@
         text-align: center;
     }
     </style>
-    
+
 <a href="https://vivrichards.co.uk/events" title="View events"><div class="notepad-content event-bar">
-            
+
         <span>Upcoming Events: </span>
         {% for event in site.data.conferences limit:1 %}
             {% capture now %}{{'now' | date: '%s' | plus: 0 %}}{% endcapture %}
             {% capture date %}{{event.startdate | date: '%s' | plus: 0 %}}{% endcapture %}
             {% if date > now %}
-                <span>{{event.title}} {{event.role}} at {{ event.name }} in {{ event.city }}</span>
-            {% endif %}                    
+                <span>{{event.title}} {{event.role}} at {{ event.name }} - {{ event.country }}</span>
+            {% endif %}
         {% endfor %}
 
-            
+
      </div></a>
 
     <div id="bgImage" class="notepad-site-head-content" >
-           
+
         <div class="notepad-site-head-bg"></div>
         <h1 class="notepad-blog-title">
             <span class="notepad-site-head-title-bg">
@@ -74,6 +74,6 @@
 </main>
     {% include footer.html %}
 
-{% include scripts.html %}  
+{% include scripts.html %}
 </body>
 </html>
