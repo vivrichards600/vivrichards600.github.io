@@ -1,5 +1,5 @@
   - startdate: 1st March 2020
-    enddate: 
+    enddate:
     name: Tech Talk Wales
     role: Talk
     title: In pursuit of hAPIness
@@ -7,24 +7,42 @@
     country:  Wales
     city:  Cardiff
     year: 2020
-  - startdate: 12th May 2020
+  - startdate: 12th June 2020
     enddate:
-    name: DevTalks Cluj
+    name: DevTalks Reimagined
     role: Talk
-    title: TBC
-    url:  https://www.devtalks.ro/cluj/
-    country:  Romania
-    city:  Cluj
-    year: 2019
-  - startdate: 11th June 2020
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.devtalks.ro
+    country: Romania / Online
+    city:
+    year: 2020
+  - startdate: 23rd September 2020
     enddate:
-    name: DevTalks Bucharest
+    name: Test Automation Days 2020
     role: Talk
-    title: TBC
-    url:  https://www.devtalks.ro/bucharest/
-    country:  Romania
-    city:  Bucharest
-    year: 
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.testautomationdays.com/
+    country: The Netherlands
+    city: Utrecht
+    year: 2020
+  - startdate: 10th November 2020
+    enddate:
+    name: Agile Testing Days
+    role: Talk
+    title: In pursuit of hAPIness
+    url: https://agiletestingdays.com/
+    country: Germany
+    city: Potsdam
+    year: 2020
+  - startdate: 11th November 2020
+    enddate:
+    name: Agile Testing Days
+    role: Talk
+    title: In pursuit of hAPIness [RE-DO]
+    url: https://agiletestingdays.com/
+    country: Germany
+    city: Potsdam
+    year: 2020
   - startdate: 12th November 2019
     enddate:
     name: South Wales Test
@@ -79,7 +97,7 @@
     city:  Bristol
     year: 2019
   - startdate: 16th April 2019
-    enddate: 
+    enddate:
     name: TestIstanbul Conference 2019
     role: Keynote
     title: Spot the difference; Automating Visual Regression Testing
@@ -88,7 +106,7 @@
     city:  Istanbul
     year: 2019
   - startdate: 25th March 2019
-    enddate: 
+    enddate:
     name: Swansea Software Development Community
     role: Talk
     title:  Exploring APIs with Postman
@@ -104,7 +122,7 @@
     url:  https://ukstar.eurostarsoftwaretesting.com/
     country:  England
     city:  London
-    year: 2019 
+    year: 2019
   - startdate: 7th February 2019
     enddate: 8th February 2019
     name: Swetugg 2019
@@ -125,14 +143,14 @@
     city:  Thessaloniki
     year: 2018
   - startdate: 25th October 2018
-    enddate: 
+    enddate:
     name: Voxed Days Bristol 2018
     role: Talk
     title: Automated Visual Testing; The Missing Part of your CI Pipeline?
     url:  https://voxxeddays.com/bristol/
     country:  England
     city:  Bristol
-    year: 2018 	
+    year: 2018
   - startdate: 18th October 2018
     enddate: 19th October 2018
     name: SeleniumConf Chicago
@@ -152,7 +170,7 @@
     video: https://www.youtube.com/watch?v=uteYqGKws5w
     country:  Lithuania
     city:  Vilnius
-    year: 2018 	
+    year: 2018
   - startdate: 27th September 2018
     enddate:
     name: TestBash Manchester
@@ -162,7 +180,7 @@
     video: https://www.ministryoftesting.com/dojo/series/testbash-manchester-2018
     country:  England
     city:  Manchester
-    year: 2018 	
+    year: 2018
   - startdate: 10th September 2018
     enddate:
     name: SwanseaCon IV
@@ -179,7 +197,7 @@
     url:  https://www.technottingham.com/
     country:  England
     city:  Nottingham
-    year: 2018  
+    year: 2018
   - startdate: 11th June 2018
     enddate:
     name: Smart Devs User Group
@@ -188,7 +206,7 @@
     url:  https://www.meetup.com/Smart-Devs-User-Group/events/247185718/
     country:  England
     city:  Hereford
-    year: 2018  
+    year: 2018
   - startdate: 22nd May 2018
     enddate:
     name: South. West. Test.
@@ -197,7 +215,7 @@
     url:  https://www.meetup.com/South-West-Test/
     country:  England
     city:  Bristol
-    year: 2018  
+    year: 2018
   - startdate: 16th May 2018
     enddate: 18th May 2018
     name: WeAreDevelopers 2018
@@ -207,18 +225,18 @@
     video: https://youtu.be/r-Qmoo-PvKk
     country:  Austria
     city:  Vienna
-    year: 2018  
+    year: 2018
   - startdate: 2nd May 2018
-    enddate: 
+    enddate:
     name: Ministry of Testing Nottingham
     role: Talk
     title: Spot the difference; Automating Visual Regression Testing
     url:  https://www.meetup.com/en-AU/ministry-of-testing-nottingham/
     country:  England
     city:  Nottingham
-    year: 2018  
+    year: 2018
   - startdate: 24th April 2018
-    enddate: 
+    enddate:
     name: Test and QA Wales Meetup
     role: Talk
     title: Automated Visual Testing. The Missing Part of your CI Pipeline?
@@ -289,7 +307,7 @@
     city:  Swansea
     year: 2017
   - startdate: 16th September 2017
-    enddate: 
+    enddate:
     name: DDD East Anglia 2017
     role: Talk
     title: Spot the difference; Automating Visual Regression Testing
@@ -298,7 +316,7 @@
     city:  Cambridge
     year: 2017
   - startdate: 21st August 2017
-    enddate: 
+    enddate:
     name: Swansea Software Development Community
     role: Talk
     title: Spot the difference; Automating Visual Regression Testing
@@ -307,7 +325,7 @@
     city:  Swansea
     year: 2017
   - startdate: 2nd March 2017
-    enddate: 
+    enddate:
     name: Design Swansea
     role: Talk
     title: Q&A with Creative Industry Professionals
@@ -329,5 +347,5 @@
     role: Organiser
     url:  https://www.swanseacon.co.uk
     country:  Wales
-    city:  Swansea    
+    city:  Swansea
     year: 2015
