@@ -1,3 +1,30 @@
+  - startdate: 23rd September 2020
+    enddate:
+    name: Test Automation Days 2020
+    role: Talk
+    title: Spot the difference; Automating Visual Regression Testing
+    url:  https://www.testautomationdays.com/
+    country: The Netherlands / Online
+    city: Utrecht
+    year: 2020
+  - startdate: 13th October 2020
+    enddate: 15th October 2020
+    name: TestCon Europe 2020
+    role: Talk
+    title: Better the ‘DevTool’ You Know
+    url: https://testcon.lt/
+    country: Lithuania / Online
+    city: Vilnius
+    year: 2020
+  - startdate: 10th November 2020
+    enddate:
+    name: Agile Testing Days
+    role: Talk
+    title: In pursuit of hAPIness
+    url: https://agiletestingdays.com/
+    country: Germany / Online
+    city: Potsdam
+    year: 2020
   - startdate: 12th June 2020
     enddate:
     name: DevTalks Reimagined
@@ -5,16 +32,7 @@
     title: Spot the difference; Automating Visual Regression Testing
     url:  https://www.devtalks.ro
     country: Romania / Online
-    city:
-    year: 2020
-  - startdate: 23rd September 2020
-    enddate:
-    name: Test Automation Days 2020
-    role: Talk
-    title: Spot the difference; Automating Visual Regression Testing
-    url:  https://www.testautomationdays.com/
-    country: The Netherlands
-    city: Utrecht
+    city: Bucharest
     year: 2020
   - startdate: 1st March 2020
     enddate:
@@ -24,24 +42,6 @@
     url: https://www.meetup.com/Test-talks-wales/
     country:  Wales
     city:  Cardiff
-    year: 2020
-  - startdate: 10th November 2020
-    enddate:
-    name: Agile Testing Days
-    role: Talk
-    title: In pursuit of hAPIness
-    url: https://agiletestingdays.com/
-    country: Germany
-    city: Potsdam
-    year: 2020
-  - startdate: 11th November 2020
-    enddate:
-    name: Agile Testing Days
-    role: Talk
-    title: In pursuit of hAPIness [RE-DO]
-    url: https://agiletestingdays.com/
-    country: Germany
-    city: Potsdam
     year: 2020
   - startdate: 12th November 2019
     enddate:
