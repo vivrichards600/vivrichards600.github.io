@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Talking the world with 80 testers
-description: 
-headline: 
+description:
+headline:
 modified: 2020-04-17
 category: Community
 tags: [community, learning, testing, webinar]
-imagefeature: 
-mathjax: 
-chart: 
+imagefeature:
+mathjax:
+chart:
 comments: true
 featured: true
 ---
 
 Over the last four months, software testers from all over the world have been sharing their stories with us as part of the free [“Around the world with 80 software testers”](https://leanpub.com/AroundTheWorldWith80SoftwareTesters) leanpub book that I have been working on. Already the book has gathered a lot of interest via social media and 572 people have already downloaded a copy. The book currently contains 30 contributions with more being added each week.
 
-![]({{ site.baseurl }}/images/80testersbook.png)
+![]({{ site.baseurl }}/images/80testersbook.jpeg)
 
 The contributions that people have made to Around The World With 80 Software Testers have been fantastic and has received great feedback with lots of likes, shares and comments as each new addition has been released. The ongoing success is down to the fantastic people that have taken the time and effort to commit their valuable experiences and you, the readers, for your ongoing and much appreciated efforts to publicise the book.
 
@@ -35,8 +35,8 @@ You can join us by visiting this link [http://meet.jit.si/TalkingTheWorldWith80T
 
 ## Got the t-shirt but not got the book ;-) ?
 
-If you haven’t already read the book, head over to leanpub and grab your free copy -  “[Around the World with 80 Software Testers](https://leanpub.com/AroundTheWorldWith80SoftwareTesters)“ 
+If you haven’t already read the book, head over to leanpub and grab your free copy -  “[Around the World with 80 Software Testers](https://leanpub.com/AroundTheWorldWith80SoftwareTesters)“
 
-Read the book? Why not tweet us using the hashtag [#80SoftwareTesters](https://twitter.com/search?q=%2380SoftwareTesters&src=typed_query) 
+Read the book? Why not tweet us using the hashtag [#80SoftwareTesters](https://twitter.com/search?q=%2380SoftwareTesters&src=typed_query)
 
-Want to take part in the book? [We would love to hear from you](https://twitter.com/11vlr) - especially new voices! 
+Want to take part in the book? [We would love to hear from you](https://twitter.com/11vlr) - especially new voices!

@@ -13,7 +13,7 @@ comments: true
 featured: true
 ---
 
-A few months back I was accepted to speak at two conferences in two different countries organised by the same company but due to the current circumstances we find ourselves in it was no longer possible for the event to run physically. Instead the two events combined to one big online conference. Fortunately I was able to still take part and give my session remotely.
+A few months back I was accepted to speak at two conferences organised by the same company but due to the current circumstances we find ourselves in it was no longer possible for the event to run physically. Instead the two events combined to one big online conference. Fortunately I was able to still take part and give my session remotely.
 
 ![]({{ site.baseurl }}/images/remote-presenting.jpeg)
 
