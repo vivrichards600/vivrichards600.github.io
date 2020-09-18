@@ -1,11 +1,11 @@
-  - startdate: 23rd September 2020
+  - startdate: 26th September 2020
     enddate:
-    name: Test Automation Days 2020
-    role: Talk
-    title: Spot the difference; Automating Visual Regression Testing
-    url:  https://www.testautomationdays.com/
-    country: The Netherlands / Online
-    city: Utrecht
+    name: TestCon 2020 Virtual
+    role: Panelist
+    title: Panel Discussion - Striking a Balance Between Manual and Automated Testing
+    url: https://www.clavent.com/testcon-2020-bangalore/
+    country: India / Online
+    city: Bangalore
     year: 2020
   - startdate: 13th October 2020
     enddate: 15th October 2020
