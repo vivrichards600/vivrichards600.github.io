@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install gems
+          command: gem install bundler
+      - run:
           name: Install dependencies
           command: bundle install
       - run:
