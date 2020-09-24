@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/ruby:2.6.3-node-browsers # Make sure your image has both `node` and is able to launch a browser
+      - image: circleci/node:latest-browsers
     steps:
       - checkout
       - run:
@@ -16,9 +16,9 @@ jobs:
           command: bundle exec jekyll build
       - run:
           name: Visual Tests
-          command: npx percy snapshot _site # snapshot built Jekyll site
+          command: npx percy snapshot _site/ # snapshot built Jekyll site
 workflows:
-  version: 2.1
+  version: 2.1.1
   build_and_test:
     jobs:
       - test
