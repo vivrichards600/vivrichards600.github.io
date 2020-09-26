@@ -8,7 +8,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem 'pygments.rb'
 gem 'tzinfo'
 gem 'tzinfo-data'
-gem 'kramdown'
+gem "kramdown", ">= 2.3.0"
 gem 'jekyll-watch'
 gem 'jekyll-paginate'
 gem "jekyll", "~> 4.0"
