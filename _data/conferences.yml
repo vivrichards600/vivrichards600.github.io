@@ -1,12 +1,3 @@
-  - startdate: 26th September 2020
-    enddate:
-    name: TestCon 2020 Virtual
-    role: Talk
-    title: Panel Discussion - Striking a Balance Between Manual and Automated Testing
-    url: https://www.clavent.com/testcon-2020-bangalore/
-    country: India / Online
-    city: Bangalore
-    year: 2020
   - startdate: 13th October 2020
     enddate: 15th October 2020
     name: TestCon Europe 2020
@@ -24,6 +15,15 @@
     url: https://agiletestingdays.com/
     country: Germany / Online
     city: Potsdam
+    year: 2020
+  - startdate: 26th September 2020
+    enddate:
+    name: TestCon 2020 Virtual
+    role: Talk
+    title: Panel Discussion - Striking a Balance Between Manual and Automated Testing
+    url: https://www.clavent.com/testcon-2020-bangalore/
+    country: India / Online
+    city: Bangalore
     year: 2020
   - startdate: 12th June 2020
     enddate:
