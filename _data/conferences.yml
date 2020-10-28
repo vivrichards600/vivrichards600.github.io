@@ -1,20 +1,11 @@
-  - startdate: 13th October 2020
-    enddate: 15th October 2020
-    name: TestCon Europe 2020
-    role: Talk
-    title: Better the ‘DevTool’ You Know
-    url: https://testcon.lt/
-    country: Lithuania / Online
-    city: Vilnius
-    year: 2020
-  - startdate: 10th November 2020
+  - startdate: 29th October 2020
     enddate:
-    name: Agile Testing Days
+    name: Test.bash('online')
     role: Talk
-    title: In pursuit of hAPIness
-    url: https://agiletestingdays.com/
-    country: Germany / Online
-    city: Potsdam
+    title: Experience Report - Web API Automation
+    url: https://www.ministryoftesting.com/events/test-dot-bash-online-2020
+    country: Online
+    city:
     year: 2020
   - startdate: 26th September 2020
     enddate:
@@ -22,8 +13,8 @@
     role: Talk
     title: Panel Discussion - Striking a Balance Between Manual and Automated Testing
     url: https://www.clavent.com/testcon-2020-bangalore/
-    country: India / Online
-    city: Bangalore
+    country: Online
+    city:
     year: 2020
   - startdate: 12th June 2020
     enddate:
@@ -31,8 +22,8 @@
     role: Talk
     title: Spot the difference; Automating Visual Regression Testing
     url:  https://www.devtalks.ro
-    country: Romania / Online
-    city: Bucharest
+    country: Online
+    city:
     year: 2020
   - startdate: 1st March 2020
     enddate:

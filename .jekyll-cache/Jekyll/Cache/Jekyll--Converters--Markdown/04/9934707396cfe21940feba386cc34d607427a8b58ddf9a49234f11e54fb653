@@ -1,8 +1,8 @@
-I"¶<h3 id="initial-project-setup">Initial Project Setup</h3>
+I"Œ<h3 id="initial-project-setup">Initial Project Setup</h3>
 <p>Create a new Unit Test Project within Visual Studio - for this example it is a C# project.</p>
 
 <p>Next we will install Selenium WebDriver by using NuGet. Run the following command in the <a href="https://docs.nuget.org/docs/start-here/using-the-package-manager-console">Package Manager Console</a>:
-<code>Install-Package Selenium.WebDriver</code></p>
+<code class="highlighter-rouge">Install-Package Selenium.WebDriver</code></p>
 
 <p><a href="https://chromedriver.storage.googleapis.com/index.html?path=2.29/">Download the C# Chrome Driver</a> as we will need this as we will be testing within a Chrome browser.
 Open the downloaded .zip file and Extract the chromedriver.exe in to your Visual Studio project folder.
@@ -12,7 +12,7 @@ Next right click chromedriver.exe within your project and click properties. We w
 
 <p>Now open up the unit test you just renamed. We need to add some imports to the top of our test in order for us to be able open up a new web browser and do stuff. Add to the top of the test class the below two usings;</p>
 
-<p><code>
+<p><code class="highlighter-rouge">
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium;
 </code></p>
@@ -22,7 +22,7 @@ using OpenQA.Selenium;
 
 <p>Paste the following into the new class</p>
 
-<pre><code>public static IWebDriver WebBrowser;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public static IWebDriver WebBrowser;
 
 [TestInitialize()]
 public void Initialization()
@@ -35,7 +35,7 @@ public void Termination()
 {
 	WebBrowser.Quit();
 }
-</code></pre>
+</code></pre></div></div>
 
 <p>So now in our code we have a method to create a new Chrome driver instance to run each of our tests and a method to close any instances of our Chrome browser which may be running to keep things tidy.</p>
 
@@ -44,16 +44,16 @@ public void Termination()
 <p>The web application we will be creating automated tests for will be the <a href="http://computer-database.herokuapp.com/computers">Computers Database</a>.
 The first thing to do is to rename the TestMethod1() to something more meaningful, this is where we will put our first test. This test will be to check the computer home page is displayed.</p>
 
-<p><code>   [TestMethod]
+<p><code class="highlighter-rouge">   [TestMethod]
 	public void Home_Page_Should_Be_Presented()
 	{
 	  //TODO
 	}
 </code></p>
 
-<p>Next we will want to get our test to actually navigate to the website we are testing and check it is being displayed by reading the page title. Go to where our test says <code>//TODO</code> and replace this text with the below code - this will be where we tell the Chrome WebDriver to navigate to the page and then check the page title equals what we expect it to.</p>
+<p>Next we will want to get our test to actually navigate to the website we are testing and check it is being displayed by reading the page title. Go to where our test says <code class="highlighter-rouge">//TODO</code> and replace this text with the below code - this will be where we tell the Chrome WebDriver to navigate to the page and then check the page title equals what we expect it to.</p>
 
-<p><code> WebBrowser.Navigate().GoToUrl("http://computer-database.herokuapp.com/computers");
+<p><code class="highlighter-rouge"> WebBrowser.Navigate().GoToUrl("http://computer-database.herokuapp.com/computers");
 	Assert.IsTrue(WebBrowser.Title.Equals("Computers database"));</code></p>
 
 <h3 id="testing-finding-elements-and-navigating-between-pages">Testing finding elements and navigating between pages</h3>

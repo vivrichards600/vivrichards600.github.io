@@ -1,4 +1,4 @@
-I"�<p>Over the past year as part of a talk on visual testing I’ve been presenting, I’ve talked a bit around writing easier to implement and maintain tests using qa-selectors. This seems to have gathered quite a bit of interest and positive feedback, and so I thought I’d write a very short blog post on what they are, why I think you should use them and how to start using them.</p>
+I"�<p>Over the past year as part of a talk on visual testing I’ve been presenting, I’ve talked a bit around writing easier to implement and maintain tests using qa-selectors. This seems to have gathered quite a bit of interest and positive feedback, and so I thought I’d write a very short blog post on what they are, why I think you should use them and how to start using them.</p>
 
 <p>Typically when writing automated UI tests you have various options to find elements on a page to interact with. Ideally you’d locate an element by Id as these should always be unique, but if it’s not available you’d then start looking at other ways to find elements by using things like Class Name, CSS Selector, Tag Name, Link Text or at the very worse case - XPath!!! The issue is that sometimes Id’s change or aren’t available, and when looking for an element by Class or Css Selector you may find that more than one element shares the same Class name for example.</p>
 
@@ -10,8 +10,8 @@
 
 <p>The naming convention we tend to use is qa-{element-type}-{name}, so for example to give a save button a qa- selector we’d assign it a class name of :</p>
 
-<pre><code class="language-html">&lt;input type="button" class="qa-button-save" value="Save"&gt;
-</code></pre>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"qa-button-save"</span> <span class="na">value=</span><span class="s">"Save"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
 
 <p>Below is an example contact form with the html markup without qa- selectors along with html markup with qa- selectors.</p>
 
