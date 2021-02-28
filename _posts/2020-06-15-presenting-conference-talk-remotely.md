@@ -15,8 +15,6 @@ featured: true
 
 A few months back I was accepted to speak at two conferences organised by the same company but due to the current circumstances we find ourselves in it was no longer possible for the event to run physically. Instead the two events combined to one big online conference. Fortunately I was able to still take part and give my session remotely.
 
-![]({{ site.baseurl }}/images/remote-presenting.jpeg)
-
 Leading up to the event I was really looking forward to it, I wasn’t quite sure what to expect but the opportunity to give a remote session really appealed to me. I didn’t seem to have the usual nerves before the event, this was probably due to the fact I don’t like travelling to different countries alone and I was looking forward to being able to give a conference presentation from the comfort of my own home.
 
 Just before the talk I found myself quite nervous with the whole remote presenting thing. This was my first time remote presenting and I think the neves were due to not being familiar with how much I or the audience would get out of a session run remotely.
