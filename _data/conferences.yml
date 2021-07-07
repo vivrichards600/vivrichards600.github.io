@@ -1,9 +1,38 @@
+  - startdate: 23rd October 2021
+    enddate: 24th October 2021
+    name: TestFlix 2021
+    role: Talk
+    title: TBC
+    url: https://www.thetesttribe.com/testflix-2021/
+    country: Online
+    city:
+    year: 2021
+  - startdate: 12th March 2021
+    enddate:
+    name: TestFest 2021
+    role: Talk
+    title: Refactoring Legacy Tests
+    url: https://testcon.co/testfest/uk-2021/
+    country: Online
+    city:
+    year: 2021
+  - startdate: 22nd February 2021
+    enddate:
+    name: UI Automation Week 2021
+    role: Talk
+    title: Experience Report - C# UI Test Refactoring
+    url: https://www.ministryoftesting.com/dojo/series/ui-automation-week-2021
+    video: https://www.ministryoftesting.com/dojo/series/ui-automation-week-2021/lessons/experience-reports-c-edition
+    country: Online
+    city:
+    year: 2021
   - startdate: 29th October 2020
     enddate:
     name: Test.bash('online')
     role: Talk
     title: Experience Report - Web API Automation
     url: https://www.ministryoftesting.com/events/test-dot-bash-online-2020
+    video: https://www.ministryoftesting.com/dojo/series/test-bash-online-2020/lessons/experience-report-web-api-automation-beth-marshall-viv-richards
     country: Online
     city:
     year: 2020

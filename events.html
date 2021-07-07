@@ -84,7 +84,7 @@ ul {
   {% if event.url == nil %}
   <span>{{ event.name }}, ({{ event.city }}, {{ event.country }})</span>
   {% else %}
-  <span><a href="{{ event.url }}" target="_blank">{{event.name}}</a>,</span>
+  <span><a target="_blank" href="{{ event.url }}" target="_blank">{{event.name}}</a>,</span>
   {% endif %}
   {% if event.city %}{{ event.city }},{% endif %} {{ event.country }}
 
@@ -98,7 +98,7 @@ ul {
   {% endif %}
 
      {% if event.video != nil %}
-  <br><i class="material-icons">video_library</i> <span><a href="{{ event.video }}">{{event.video}}</a></span>
+  <br><i class="material-icons">video_library</i> <span><a href="{{ event.video }}" title="Watch the recording of {{event.title}}">Watch the recording</a></span>
   {% endif %}
 
 </ul>
@@ -175,7 +175,7 @@ ul {
   {% if event.url == nil %}
   <span>{{ event.name }}, ({{ event.city }}, {{ event.country }})</span>
   {% else %}
-  <span><a href="{{ event.url }}">{{event.name}}</a>,</span>
+  <span><a target="_blank" href="{{ event.url }}">{{event.name}}</a>,</span>
   {% endif %}
   {% if event.city %}{{ event.city }},{% endif %} {{ event.country }}
 
@@ -189,7 +189,7 @@ ul {
   {% endif %}
 
      {% if event.video != nil %}
-  <br><i class="material-icons">video_library</i> <span><a href="{{ event.video }}">{{event.video}}</a></span>
+  <br><i class="material-icons">video_library</i> <span><a target="_blank" href="{{ event.video }}" title="Watch the recording of {{event.title}}">Watch the recording</a></span>
   {% endif %}
 
 </ul>
