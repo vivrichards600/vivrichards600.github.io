@@ -12,3 +12,4 @@ gem "kramdown", ">= 2.3.0"
 gem 'jekyll-watch'
 gem 'jekyll-paginate'
 gem "jekyll", "~> 4.0"
+gem 'jekyll-feed'
