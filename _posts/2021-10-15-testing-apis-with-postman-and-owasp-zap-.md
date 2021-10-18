@@ -4,8 +4,8 @@ title: Testings APIs with Postman and OWASP ZAP proxy
 description:
 headline:
 modified: 2021-10-02
-category: Retro
-tags: []
+category: Testing
+tags: [testing, API, postman, ZAP]
 imagefeature:
 mathjax:
 chart:
