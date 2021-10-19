@@ -1,5 +1,5 @@
-title:            VR
-description:      "TDT (Tea Driven Tester)"
+title:            Viv Richards
+description:      "Not the cricketer!"
 logo:             logo.png
 disqus_shortname: vivrichards
 share:            true
@@ -155,7 +155,7 @@ prose:
           element: "checkbox"
           label: "Comments"
           value: false
-          
+
 plugins:
   - jekyll-feed
 

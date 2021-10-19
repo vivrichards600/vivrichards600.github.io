@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Viv Richards
+title: About me
 tags: [Viv, Richards]
 imagefeature: viv.jpg
 chart: true
@@ -13,7 +13,7 @@ Not the cricketer! I am the Lead QA consultant at <a href="http://rubberduckcons
   <figcaption>Viv Richards</figcaption>
 </figure>
 
-{% include counteventdetails.html %} 
+{% include counteventdetails.html %}
 
 {% assign total_words = 0 %}
 {% assign total_readtime = 0 %}
