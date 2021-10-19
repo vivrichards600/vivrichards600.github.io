@@ -1,4 +1,4 @@
-I"_<p>A question came up recently over on the <a href="https://club.ministryoftesting.com/t/tool-for-api-and-security-testing/39504/8">Ministry of Testing Club Forum</a> where people were sharing thoughts on how you might be able to use a tool for both API and Security Testing.</p>
+I"�<p>A question came up recently over on the <a href="https://club.ministryoftesting.com/t/tool-for-api-and-security-testing/39504/8">Ministry of Testing Club Forum</a> where people were sharing thoughts on how you might be able to use a tool for both API and Security Testing.</p>
 
 <p>Whilst I’ve not used a tool to do both, this got me thinking. Could some of the tools I’ve used previously be used in combination to achieve this?</p>
 
@@ -27,6 +27,8 @@
 <ul>
   <li>Now within Postman you can run individual requests or choose to ‘Run collection’ using Postman’s collection runner. Any alerts that should be investigated will be shown in ZAP along with the URLs/Endpoints called within the ‘Sites’.</li>
 </ul>
+
+<p><img src="/images/postman-zap-setup.gif" alt="_config.yml" /></p>
 
 <h5 id="issues-making-requests">Issues making requests?</h5>
 <p>If after configuring both tools and making a request via Postman you see an error within Postman stating “SSL Error: Self signed certificate in certificate chain”, click on ‘Disable SSL Verification’ in order to be able to run the requests and avoid this error. Because the requests are being sent through ZAP (which uses a self-signed SSL certificate) to capture the request and response being sent you might see this error. By default, this certificate is not trusted by your system, browser, or Postman.

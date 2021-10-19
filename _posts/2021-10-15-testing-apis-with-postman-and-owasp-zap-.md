@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Testings APIs with Postman and OWASP ZAP proxy
+title: Testing APIs with Postman and OWASP ZAP proxy
 description:
 headline:
 modified: 2021-10-02
@@ -37,6 +37,8 @@ Below is a simple way you could choose to test API requests with Postman with ZA
 
 #### Ready to test:
 * Now within Postman you can run individual requests or choose to ‘Run collection’ using Postman’s collection runner. Any alerts that should be investigated will be shown in ZAP along with the URLs/Endpoints called within the ‘Sites’.
+
+![configuring postman to proxy via zap]({{ site.baseurl }}/images/postman-zap-setup.gif)
 
 ##### Issues making requests?
 If after configuring both tools and making a request via Postman you see an error within Postman stating “SSL Error: Self signed certificate in certificate chain”, click on ‘Disable SSL Verification’ in order to be able to run the requests and avoid this error. Because the requests are being sent through ZAP (which uses a self-signed SSL certificate) to capture the request and response being sent you might see this error. By default, this certificate is not trusted by your system, browser, or Postman.
