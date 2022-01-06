@@ -4,6 +4,27 @@
     role: Talk
     title: The power of Mocks and Postman
     url: https://www.thetesttribe.com/testflix-2021/
+    video: https://www.youtube.com/watch?v=SnNWCszXJV0&list=PLYS2_EZ_4iOSQ_dXtUig1jVQu4hpvLNYl&index=97
+    country: Online
+    city:
+    year: 2021
+  - startdate: 7th October 2021
+    enddate:
+    name: Ministry of Testing
+    role: Course
+    title: A Software Testers Guide to Chrome DevTools
+    url: https://www.ministryoftesting.com/dojo/courses/a-software-tester-s-guide-to-chrome-devtools
+    course: https://www.ministryoftesting.com/dojo/courses/a-software-tester-s-guide-to-chrome-devtools
+    country: Online
+    city:
+    year: 2021
+  - startdate: 6th March 2021
+    enddate:
+    name: Ministry of Testing
+    role: Podcast
+    title: Meet the Contributor
+    url: https://www.ministryoftesting.com/dojo/series/meet-the-contributers/lessons/meet-the-contributor-viv-richards
+    audio: https://www.ministryoftesting.com/dojo/series/meet-the-contributers/lessons/meet-the-contributor-viv-richards
     country: Online
     city:
     year: 2021
@@ -16,13 +37,23 @@
     country: Online
     city:
     year: 2021
-  - startdate: 22nd February 2021
+  - startdate: 25th February 2021
     enddate:
     name: UI Automation Week 2021
     role: Talk
     title: Experience Report - C# UI Test Refactoring
     url: https://www.ministryoftesting.com/dojo/series/ui-automation-week-2021
     video: https://www.ministryoftesting.com/dojo/series/ui-automation-week-2021/lessons/experience-reports-c-edition
+    country: Online
+    city:
+    year: 2021
+  - startdate: 22nd February 2021
+    enddate:
+    name: Testers' Island Discs Podcast
+    role: Podcast
+    title: Testers' Island Discs Ep44
+    url: https://www.ministryoftesting.com/dojo/series/testers-island-discs-podcast/lessons/testers-island-discs-ep44-viv-richards
+    audio: https://www.ministryoftesting.com/dojo/series/testers-island-discs-podcast/lessons/testers-island-discs-ep44-viv-richards
     country: Online
     city:
     year: 2021

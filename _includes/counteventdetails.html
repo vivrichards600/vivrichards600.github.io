@@ -3,6 +3,8 @@
 {% assign talkcount = 0 %}
 {% assign workshopcount = 0 %}
 {% assign tutorialcount = 0 %}
+{% assign podcastcount = 0 %}
+{% assign coursecount = 0 %}
 
 {% assign countries = nil %}
 
@@ -25,7 +27,13 @@
       {% assign talkcount = talkcount | plus: 1   %}
     {% endif %}
     {% if role == "Workshop" %}
-      {% assign workshopcount = workshopcount | plus: 1   %}
+    {% assign workshopcount = workshopcount | plus: 1   %}
+    {% endif %}
+    {% if role == "Course" %}
+    {% assign coursecount = coursecount | plus: 1   %}
+    {% endif %}
+    {% if role == "Podcast" %}
+    {% assign podcastcount = podcastcount | plus: 1   %}
     {% endif %}
 
   {% endfor %}
