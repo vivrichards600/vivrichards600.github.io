@@ -5,7 +5,7 @@ description:
 headline:
 modified: 2022-06-18
 category: Automation
-tags: []
+tags: [automation, heardle, exploratory testing]
 imagefeature:
 mathjax:
 chart:
@@ -38,13 +38,13 @@ I came back and tried to look at the problem afresh. I knew there was a request 
 
 As I inspected the page I found a div with a hidden class name, interesting! It was this div that contained an iframe with the same URL that I had noticed within the network tab being called. If only I had just searched for the same URL within the Elements tab of DevTools sooner I’d have found the answer, and it was a lot simpler than I thought.
 
-Now it was easy, to navigate to the Heardle page, find the hidden element, obtain the song title from the hidden fields URL, submit it and that’s it. 
+Now it was easy, to navigate to the Heardle page, find the hidden element, obtain the song title from the hidden fields URL, submit it and that’s it. There were a few small gotchas. Sometimes, the title for the song can be very short or contain -1 for example within the URL. It's not perfect but to ensure the code worked as expected I had to do a quick and dirty string replace to remove the -1 and added some simple logic to only get the first 10 characters of the title if it was greater than 10 characters as some title have for example Remastered 2014 which doesn't come up within the auto complete.
 
 ![heardle solution]({{ site.baseurl }}/images/heardle-solution.gif)
 
-After trying this in my selenium test, it worked perfectly ([My simplistic solution can be found here](https://gist.github.com/vivrichards600/8a42aed3ca7ab7c4f2219952de067f3e)).
+After trying this in my selenium test, it worked perfectly ([My simplistic solution can be found here](https://gist.github.com/vivrichards600/8a42aed3ca7ab7c4f2219952de067f3e)). Of course if there is lots of refactoring that could and should be done, but as this was just to test the idea I'm not to concerned.
 
-This challenge was so fun, and the solution ended up being so simple. It reminded me of a few things. Sometimes you really need to try and keep things simple. Try to reign it in and not over-engineer the solution. Don't jump in with both feet just trying to write some automation. 
+This challenge was so fun, and the solution ended up being so simple. It reminded me of a few things. Sometimes you really need to try and keep things simple. Try to reign it in and not over-engineer the solution. Don't jump in with both feet just trying to write some automation and get carried away. 
 Explore the application, and understand it.  
 
 More often than not, the best solutions are the simplest ones.
