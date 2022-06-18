@@ -4,7 +4,7 @@ title: Gaming Heardle - The art of keeping things simple
 description:
 headline:
 modified: 2022-06-18
-category: Retro
+category: Automation
 tags: []
 imagefeature:
 mathjax:
@@ -42,7 +42,7 @@ Now it was easy, to navigate to the Heardle page, find the hidden element, obtai
 
 ![heardle solution]({{ site.baseurl }}/images/heardle-solution.gif)
 
-After trying this in my selenium test, it worked perfectly.
+After trying this in my selenium test, it worked perfectly ([My simplistic solution can be found here](https://gist.github.com/vivrichards600/8a42aed3ca7ab7c4f2219952de067f3e.js)).
 
 This challenge was so fun, and the solution ended up being so simple. It reminded me of a few things. Sometimes you really need to try and keep things simple. Try to reign it in and not over-engineer the solution. Don't jump in with both feet just trying to write some automation. 
 Explore the application, and understand it.  
