@@ -15,7 +15,7 @@ featured: true
 
 My whole family love to play [Heardle](https://heardle.app). If you haven't heard of it before, Heardle is a game where each day you have to listen to the intro of a song, then guess the correct artist & title. It's a really fun game that we all enjoy playing on our phones but it got me thinking, is this game something that I could automate to correctly guess the Heardle each day?
 
-> **Spoiler Alert**: The following information explains how to solve the daily Heardle
+> **Spoiler Alert**: The following information explains how to solve the daily Heardle in a way that wasn't intended by the games author(s).
 
 ![heardle.app]({{ site.baseurl }}/images/heardle-app.png)
 
