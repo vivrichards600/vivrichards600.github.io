@@ -21,7 +21,7 @@ This post isn't being written to encourage cheating at the game. Instead, I want
 
 ![heardle.app]({{ site.baseurl }}/images/heardle-app.png)
 
-When software testing and exploring an application. There are many [heurists you might wish to use](https://www.ministryoftesting.com/dojo/lessons/test-heuristics-cheat-sheet). There are multiple definitions of using a Heuristic, here's one from the Cambridge Dictionary:
+When software testing and exploring an application, there are many [heurists you might wish to use](https://www.ministryoftesting.com/dojo/lessons/test-heuristics-cheat-sheet). There are multiple definitions of using a Heuristic, here's one from the Cambridge Dictionary:
 
 >“A method of learning or solving problems that allow people to discover things themselves and learn from their own experiences.” – Cambridge Dictionary
 
