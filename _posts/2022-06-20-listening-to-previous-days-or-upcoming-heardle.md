@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Listening to missed or upcoming days within Heardle
+title: Exploring Heardle - Listening to missed or upcoming days
 description:
 headline:
 modified: 2022-06-18
