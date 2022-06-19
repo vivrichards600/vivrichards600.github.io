@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gaming Heardle - The art of keeping things simple
+title: Automating Heardle - The art of keeping things simple
 description:
 headline:
 modified: 2022-06-18
