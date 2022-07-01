@@ -643,3 +643,23 @@ iframe {
   max-width: 56.25rem;
   font-size: 1.125rem;
 }
+
+.advert {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+  max-width: 62.5rem;
+  border-bottom: 0.0625rem solid #d9d9d9;
+}
+
+.advert:before {
+  content: "Advert";
+  clear: both;
+  flat: lef;
+  clear: both;
+  border: 1px solid grey;
+  padding: 1px;
+}
