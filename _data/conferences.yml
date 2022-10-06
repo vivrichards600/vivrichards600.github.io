@@ -1,9 +1,9 @@
-  - startdate: 6th October 2022
-    enddate: 7th October 2022
-    name: 13th International TestIstanbul Conference 2022
-    role: Keynote
-    title: TBC
-    url: https://testistanbul.org/
+  - startdate: 20th October 2022
+    enddate:
+    name: Test.bash(); 2022
+    role: Talk
+    title: UI Automation Challenge - DevTools
+    url: https://www.ministryoftesting.com/events/test-bash-2022
     country: Online
     city: 
     year: 2022

@@ -1,0 +1,76 @@
+I"4<p>Following on from my previous two blog posts that explored <a href="2022-06-18-gaming-heardle-the-art-of-keeping-things-simple.md">how to automate guessing Heardle</a> and <a href="2022-06-20-listening-to-previous-days-or-upcoming-heardle.md">listening to a previous or upcoming Heardle</a>, in this post I explore how to alter Heardle to achieve a perfect score.</p>
+
+<blockquote>
+  <p><strong>Spoiler Alert</strong>: The following information explains how to alter your daily Heardle stats.</p>
+</blockquote>
+
+<p>The aim of this post isn’t to encourage cheating at the game. Instead, I want to share some ideas about exploring an application and how it can be manipulated to behave in a way that isn’t how the developer(s) of the game intended.</p>
+
+<p>Sometimes, no matter how long you spend listening to the first second of a Heardle, it just isn’t enough. It can be so frustrating. Yesterday I wasn’t 100% on the Heardle for the day and so decided to click the <code class="highlighter-rouge">Skip</code> button to hear another second of it. After the additional second played, I got it. Doh! I should have known this one, and now I’ve lost my perfect score for the day…</p>
+
+<p>As a reminder of your guesses, Heardle provides its users with an overview of their scores. Within the stats window, you can see the number of Heardles you’ve guessed, and they get grouped by the number of attempts it took you to guess. My daily Heardle of the day was now showing two attempts.</p>
+
+<p><img src="/images/heardle-stats.png" alt="heardle.app stats" /></p>
+
+<p>This got me thinking, is it possible to change a Heardle score? What if we could hide the fact we had to skip when guessing the Heardle to get a perfect score for the day?</p>
+
+<p>When I explore a web application, one of the tools I really love using is DevTools. DevTools contains many tools that can help you in your day-to-day testing of web applications and are built into the web browser. I’m not going to talk much about how to use DevTools in this post, but if you’d like to learn more about DevTools and how to use it to generate new test ideas, why not check out my course over on the Ministry of Testing site.</p>
+
+<p><a href="https://www.ministryoftesting.com/dojo/courses/a-software-tester-s-guide-to-chrome-devtools"><img src="/images/course_banner.png" alt="A software testers guide to Chrome DevTools course" /></a></p>
+
+<p>To start on my mission of a perfect score, with <a href="https://heardle.app">Heardle</a> opened within my Chrome web browser I right-clicked and inspected the page. One of the things I often do when I see that a web application is storing information on my usage is that I like to go to the <a href="https://developer.chrome.com/docs/devtools/#application">Application panel within DevTools</a>. Within this panel, there are a number of different things you can look at. When I use this panel I like to look at the Cookies and Local Storage.</p>
+
+<p>When inspecting the Heardle page and looking at the Cookies panel there were some entries for Heardle. After a closer inspection, sadly only Google Analytic information was being stored here for Heardle. Next, I headed over to the Local Storage section.</p>
+
+<p>The Local Storage API is used by some web applications as a way to store, retrieve, and track changes to user data. Within this panel, there were two entries for Heardle. One called <code class="highlighter-rouge">firstTime</code>, with a value of <code class="highlighter-rouge">false</code>, and the other called <code class="highlighter-rouge">userStats</code> which contained some interesting-looking JSON.</p>
+
+<p><img src="/images/viewing-local-storage.png" alt="Viewing local storage for Heardle" /></p>
+
+<p>I altered the <code class="highlighter-rouge">firstTime</code> value and reloaded the page. The behaviour changed as if it was the very first time I had opened Heardle with a how-to-play splash screen being displayed. Whilst this showed the splash screen, my stats were unchanged.</p>
+
+<p>Next, I looked at the <code class="highlighter-rouge">userStats</code> JSON value. There was lots of interesting information:</p>
+
+<pre>
+[
+  {
+    "id": 116,
+    "guessList": [
+      {
+        "answer": "",
+        "isCorrect": false,
+        "isSkipped": true,
+        "isArtist": false,
+        "playCount": 1
+      },
+      {
+        "answer": "The Foundations - Build Me Up Buttercup",
+        "isCorrect": true,
+        "isSkipped": false,
+        "isArtist": false,
+        "playCount": 1
+      }
+    ],
+    "hasFinished": true,
+    "hasStarted": true,
+    "img": "https://i1.sndcdn.com/artworks-hnz9Jtey8tXv-0-large.jpg",
+    "gotCorrect": true,
+    "score": 2
+  }
+]
+</pre>
+
+<p>From looking through the JSON value there were some interesting things being stored. A <code class="highlighter-rouge">guessList</code> which seemed to keep track of the number of attempts and also because I had got the Heardle on my second attempt, there were some values to indicate I’d finished the Heardle (<code class="highlighter-rouge">"hasFinished": true</code>), got the answer correct (<code class="highlighter-rouge">"gotCorrect": true</code>) and that it took me two guesses (<code class="highlighter-rouge">"score": 2</code>)</p>
+
+<p>I wanted to start modifying the JSON value, in particular the <code class="highlighter-rouge">guessList</code>. I copied the entire <code class="highlighter-rouge">userStats</code> JSON value and pasted it into <a href="https://jsonformatter.org/json-pretty-print">a free online JSON formatter</a> so that I could easily view and modify the structure. Next, using the online editor I removed the contents within <code class="highlighter-rouge">[</code> <code class="highlighter-rouge">]</code> for the <code class="highlighter-rouge">guessList</code>. I also changed the <code class="highlighter-rouge">score</code> value to <code class="highlighter-rouge">1</code>. Then I clicked on the <code class="highlighter-rouge">Make Pretty</code> button on the online formatter, copied the formatted JSON and pasted it into the Local Storage, over-writing the <code class="highlighter-rouge">userStats</code> value.</p>
+
+<p>I reloaded the webpage and clicked on my stats. A perfect score!</p>
+
+<p><img src="/images/heardle-alter-score.gif" alt="heardle.app altering score" /></p>
+
+<p>When exploring, I also purposely removed all of my Local Storage to see what other things we might want to do. One scenario was getting to a point where you use all your skips and so you run out of turns and the Heardle is revealed.</p>
+
+<p>In this scenario, you could modify the <code class="highlighter-rouge">userStats</code> JSON value and just remove the days Heardle. You can do this by amending the <code class="highlighter-rouge">guessList</code>. To do this you would remove the JSON starting with <code class="highlighter-rouge">{ "id:</code> (make sure you remove the correct Heardle) down to the closing bracket <code class="highlighter-rouge">}</code> just after the <code class="highlighter-rouge">"score":</code> value for the Heardle.</p>
+
+<p>Now you could listen to the song again, put in the correct song and get the correct answer in one guess ;-).</p>
+
+:ET

@@ -1,0 +1,31 @@
+I"Q	<p>As I mentioned in a <a href="2022-06-18-gaming-heardle-the-art-of-keeping-things-simple.md">previous post</a>, my whole family and I, love to play <a href="https://heardle.app">Heardle</a>. Whilst I try to listen to the daily Heardle, sometimes I forget and so miss the chance. The game currently also doesn’t have a way to revisit a previous Heardle.</p>
+
+<blockquote>
+  <p><strong>Spoiler Alert</strong>: The following information explains how to use Heardle in a way that wasn’t intended by the games author(s).</p>
+</blockquote>
+
+<p>This post isn’t being written to encourage cheating at the game. Instead, I wanted to share some ideas around exploring an application and showing how it could be manipulated to behave in a way that wasn’t quite how the developer(s) intended.</p>
+
+<p><img src="/images/heardle-app.png" alt="heardle.app" /></p>
+
+<p>When software testing and exploring an application, there are many <a href="https://www.ministryoftesting.com/dojo/lessons/test-heuristics-cheat-sheet">heurists you might wish to use</a>. There are multiple definitions of using a Heuristic, here’s one from the Cambridge Dictionary:</p>
+
+<blockquote>
+  <p>“A method of learning or solving problems that allow people to discover things themselves and learn from their own experiences.” – Cambridge Dictionary</p>
+</blockquote>
+
+<p>One thing we know about the <a href="[Heardle](https://heardle.app)">Heardle.app</a> is that a new song is released each day. What if we could alter the day and then go back and listen to a previous days Heardle?</p>
+
+<p>By altering the date on my computer and then reloading the page, guess what happens. Why not try it yourself and see ;-) ?</p>
+
+<p><img src="/images/heardle-alter-date.gif" alt="heardle.app altering the date" /></p>
+
+<p>Now we can revisit old Heardle’s we might have missed. Not only that, we can change the date to a future one. Now you can guess the next days Heardle before it’s meant to be available on the game.</p>
+
+<p>In my <a href="2022-06-18-gaming-heardle-the-art-of-keeping-things-simple.md">previous post</a> I showed how you could automatically guess a Heardle. Now we could automatically guess any previous or future Heardle.</p>
+
+<p><img src="/images/headle-date-change-automated-guess.gif" alt="Change date and automatically guessing the Heardle" /></p>
+
+<p>Have fun and happy exploring!</p>
+
+:ET
