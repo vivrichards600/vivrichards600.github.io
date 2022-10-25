@@ -1,0 +1,12 @@
+I"³<p>One of the tools I really enjoying using when performing accessibility testing. Primarily I make use of their browser extension 
+I recently released a new tool to instantly generate HTML accessibility reports using the .json that is output by axe-core cli. It is written using HTML, JavaScript, and uses json2html to render JSON objects into HTML. 
+Inspired by <a href="https://twitter.com/eviltester">EvilTester (Alan Richardson)</a>
+Following on from my previous two blog posts that explored <a href="2022-06-18-gaming-heardle-the-art-of-keeping-things-simple.md">how to automate guessing Heardle</a> and <a href="2022-06-20-listening-to-previous-days-or-upcoming-heardle.md">listening to a previous or upcoming Heardle</a>, in this post I explore how to alter Heardle to achieve a perfect score.</p>
+
+<blockquote>
+  <p><strong>Spoiler Alert</strong>: The following information explains how to alter your daily Heardle stats.</p>
+</blockquote>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C7L461Agkqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+:ET
