@@ -1,7 +1,0 @@
-I"@<p>I recently released a new tool <a href="https://vivrichards.co.uk/axe-json2html/index.html">Axe .JSON to HTML Report Generator</a>.</p>
-
-<p>In the below video I show how to use the tool to generate an HTML report from an <a href="https://www.npmjs.com/package/@axe-core/cli">@axe-core/cli</a> generated .JSON file.</p>
-
-<iframe width="360" height="315" src="https://www.youtube.com/embed/C7L461Agkqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-:ET

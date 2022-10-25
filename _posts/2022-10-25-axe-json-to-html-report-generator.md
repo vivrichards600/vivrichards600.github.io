@@ -17,3 +17,9 @@ I recently released a new tool [Axe .JSON to HTML Report Generator](https://vivr
 
 <iframe width="360" height="315" src="https://www.youtube.com/embed/C7L461Agkqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
+<style>
+.fluid-width-video-wrapper {
+padding-top: 50.5% !important;
+}
+</style>

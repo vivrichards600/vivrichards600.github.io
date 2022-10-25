@@ -1,9 +1,0 @@
-I".<p>When performing accessibility testing I try to use a combination of tools and techniques to find potential violations. One of the tools I really enjoy using to support accessibility testing is axe. Axe is available in a few different forms. Personally I tend to use the <a href="https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd">axe browser extension</a> to support exploratory testing as well as <a href="https://www.npmjs.com/package/@axe-core/cli">@axe-core/cli</a> to help automate identifying potential violations.</p>
-
-<p>One issue I often have whether I am using the browser extension or cli is that the .JSON output produced by axe can be very difficult to understand due to the files structure.</p>
-
-<p>I recently released a new tool Axe .JSON to HTML Report Generator to instantly generate HTML accessibility reports using the .json that is output by axe-core cli. In the below video I show how to generate a .JSON file from @axe-core/cli and then how to generate a HTML report from it using this tool.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C7L461Agkqk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-
-:ET
