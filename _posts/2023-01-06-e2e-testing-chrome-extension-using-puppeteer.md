@@ -34,7 +34,7 @@ If you’d like to create the extension to try for yourself but prefer to not ha
 We won’t go into the ins and outs of [Puppeteer](https://pptr.dev/) and coding best practices in this post but instead will briefly look at [a simple Puppeteer end-to-end test that has been created for this blog post that tests the ‘Hello Extensions’ Chrome extension](https://github.com/vivrichards600/puppeteer-extension-example/blob/Puppeteer/hello-extensions.test.js).
 A thing to note is that in order for us to write and execute a Puppeteer test we need to make a few changes to our extension as well as add a couple of things.
 
-All of the code for the Chrome `Hello Extensions` browser extension and the Puppeteer end-to-end test code can be found here (https://github.com/vivrichards600/puppeteer-extension-example).
+[All of the code for the Chrome `Hello Extensions` browser extension and the Puppeteer end-to-end test code can be found here](https://github.com/vivrichards600/puppeteer-extension-example).
 
 ### package.json
 In order to use Jest and Puppeteer within our test a new [package.json](https://github.com/vivrichards600/puppeteer-extension-example/blob/Puppeteer/package.json) file was added to specify our test will use jest as well as specifying dependencies on jest and jest-puppeteer versions to be used.
