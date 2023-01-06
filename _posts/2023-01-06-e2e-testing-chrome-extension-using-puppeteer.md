@@ -4,7 +4,7 @@ title: End-to-end testing a Chrome extension using Puppeteer
 description:
 headline:
 modified: 2023-01-06
-category: Accessibility
+category: Automation
 tags: [automation, chrome, extension, puppeteer, testing, manifest v3]
 imagefeature:
 mathjax:
