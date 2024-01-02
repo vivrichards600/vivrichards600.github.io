@@ -153,7 +153,7 @@ The last few clients I've worked with have all used GitHub as a place to store c
 ### PRs lost in all the noise
 Many of the teams I've had the pleasure of working in have had their own dedicated channel for the team to post messages, asking for help etc. On my existing team quite often we would share links to PRs in our team channel to ask others to review and provide any feedback.
 
-The problem with this was that of over 10 people and with many people working on different things, messaging about work and non work related things, alerts being shared in the channel etc, often messages asking to review PRs were getting lost. Individuals would need then need to remind teams of the PR and dig out the message to ask them for approval.
+The problem with this was that of over 10 people and with many people working on different things, messaging about work and non work related things, alerts being shared in the channel etc, often messages asking to review PRs were getting lost. Individuals would need then need to remind the team of the PR and dig out the message to ask them for approval.
 
 To combat this we created a new channel specifically for Pull Requests. Whilst simple, this has been effective in ensuring all work requiring approval is in one place. As a team we add comments/provide feedback, but also use emojis to indicate if something is being looked at, has been approved, merged etc. 
 
