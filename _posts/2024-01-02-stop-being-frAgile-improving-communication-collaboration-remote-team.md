@@ -174,7 +174,7 @@ If you can, why not pair? By pairing you are constantly discussing/reviewing wha
 
 One common issue I see with teams who pair and have PR approval setup is that they might pair with one engineer but then share the PR for somebody else to approve within the team. 
 
-Imagine we've been pairing with another engineer called Toby to implement a piece of code. If we hadn't have paired with Toby would we have accepted their approval of our work? Would we still have asked others in the team to additionally review the work despite the fact we only require one approval before the work could be merged?  Whilst pairing with Toby we would have been discussing, implementing and refactoring as we worked together.
+Imagine we've been pairing with another engineer called Toby to implement a piece of code. If we hadn't have paired with Toby would we have accepted their approval of our work? Would we still have asked others in the team to additionally review the work despite the fact we only require one approval before the work could be merged?  Whilst pairing with Toby we would have been reviewing, discussing, implementing and refactoring as we worked together.
 
 Perhaps sometimes for a larger/more crucial change you might want to have more eyes on what is being done but maybe that's an opportunity to swarm with more of the team whilst doing the work rather than just pairing with an individual.
 
