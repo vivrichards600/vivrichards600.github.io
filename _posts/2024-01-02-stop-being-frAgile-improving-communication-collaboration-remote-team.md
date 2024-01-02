@@ -169,7 +169,7 @@ To improve this there are a few different things you could do.
 
 There was one team I worked on many years ago where I think an individual felt that adding lots of comments to a PR showed that they were really busy - or they'd get gold stars or a pat on the back :)). Don't be that guy, shorten feedback loops, work together!
 
-### Shortening the feedback loop
+### Pairing - Shortening the feedback loop
 If you can, why not pair? By pairing you are constantly discussing/reviewing what is being written and reworking as you go. 
 
 One common issue I see with teams who pair and have PR approval setup is that they might pair with one engineer but then share the PR for somebody else to approve within the team. 
