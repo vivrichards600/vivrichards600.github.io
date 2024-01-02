@@ -100,7 +100,7 @@ I've attended many retrospectives over the years where we spent over an hour dis
 
 If you do retrospectives and actions/tasks are raised, try to ensure you choose 2 or 3 that you will try to do before the next one. Do not fall into the trap of trying to action everything that was raised. From experience, whenever I've seen teams trying to do this they often fail. This then leads to people becoming frustrated and not seeing the value of raising actions in retrospectives. Ensuring each action/task has an owner also really helps. Ask people before the retrospective ends who would like to own each action/task. 
 
-The end of stand-up is a great time to remind teams of the agreed actions/tasks, discuss and have any discussions and/or get help to achieve them. It doesn't have to be every day but a little reminder helps ensure that they aren't forgotten.
+The end of stand-up is a great time to remind teams of the agreed actions/tasks, have any discussions and/or get help to achieve them. It doesn't have to be every day but a little reminder helps ensure that they aren't forgotten.
 
 It might also be that you do not need a retrospective. Don't blindly just do one because you're 'being agile' or because another cool company that you've read about does one. Maybe a check-in with the team and/or a temperature check is all your team needs.
 
