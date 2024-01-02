@@ -165,7 +165,7 @@ Often I've observed people adding lots of comments on PRs. Whilst it's great som
 To improve this there are a few different things you could do. 
 * Pair where possible (or by default)
 * Jump on a call instead of filling a PR with comments and do a review
-* If there are changes that are required, don't just add a comment, why not create a commit with the proposed changes?
+* If there are changes that are required, don't just add a comment, why not create a commit or patch with the proposed changes?
 
 There was one team I worked on many years ago where I think an individual felt that adding lots of comments showed they were busy - or they'd get gold stars :)). Don't be that guy, shorten feedback loops, work together!
 
