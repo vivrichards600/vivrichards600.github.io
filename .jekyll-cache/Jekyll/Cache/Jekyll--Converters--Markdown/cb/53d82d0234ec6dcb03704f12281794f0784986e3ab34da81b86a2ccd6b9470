@@ -1,4 +1,4 @@
-I"<p>Typically when writing and testing applications people will often not write tests directly at the database level, often because developers or testers are unsure how to tackle this problem or are simply not aware that they can. I’ve seen many people write unit, integration/service or UI tests but never tests which test just the database.</p>
+I"P<p>Typically when writing and testing applications people will often not write tests directly at the database level, often because developers or testers are unsure how to tackle this problem or are simply not aware that they can. I’ve seen many people write unit, integration/service or UI tests but never tests which test just the database.</p>
 
 <p>Last week I was very fortunate to pair on a piece of work with an exceptional DBA - Michal Poreba. He showed me some things around testing at the database level using Pester and dbatools and so I thought I would note it down in a blog post not only as a point of reference for myself but to hopefully help others.</p>
 
@@ -23,7 +23,7 @@
 <h3 id="install-pester">Install Pester</h3>
 
 <p>In order to install Pester firstly open powershell as an administrator and then run the following:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Module -Name Pester -Force -SkipPublisherCheck
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Module -Name Pester -Force -SkipPublisherCheck
 </code></pre></div></div>
 
 <p>You may get prompted to install NuGet provider. If you do type ‘y’ and press enter to continue.</p>
@@ -41,7 +41,7 @@
 <h3 id="install-dbatools">Install dbatools</h3>
 
 <p>In order to install dbatools firstly open powershell as an administrator and then run the following:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Module dbatools
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Install-Module dbatools
 </code></pre></div></div>
 <p>You may get prompted to install NuGet provider. If you do type ‘y’ and press enter to continue.</p>
 
@@ -55,7 +55,7 @@
 
 <p>Next copy the below in to the [yourfilename].ps1 file you created</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$testInstance = "localhost\sql2017" &lt;- replace with your local instance info!!
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$testInstance = "localhost\sql2017" &lt;- replace with your local instance info!!
 $testDatabase = "Sample"
 
 function CheckProcedureExists{

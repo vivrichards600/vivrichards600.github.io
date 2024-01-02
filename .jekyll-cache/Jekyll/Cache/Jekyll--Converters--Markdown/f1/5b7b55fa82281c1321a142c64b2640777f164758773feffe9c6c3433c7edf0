@@ -1,4 +1,4 @@
-I"m"<p>Back in November <a href="https://chat.openai.com/chat">ChatGPT</a> was launched.</p>
+I"+#<p>Back in November <a href="https://chat.openai.com/chat">ChatGPT</a> was launched.</p>
 
 <blockquote>
   <p>ChatGPT is a chatbot launched by OpenAI in November 2022. It is built on top of OpenAI’s GPT-3.5 family of large language models, and is fine-tuned with both supervised and reinforcement learning techniques.</p>
@@ -11,9 +11,9 @@
 <h1 id="create-cucumber-scenarios">Create Cucumber scenarios</h1>
 <p>I assumed ChatGPT would be able to write Cucumber scenarios but was curious in the style that it might use to write it.</p>
 
-<p>I wanteed to see how ChatGPT would write Cucumber scenarios to test <a href="https://www.access.service.gov.uk/login/signin/creds">the HMRC Government Gateway page</a>, and so I asked: <code class="highlighter-rouge">cucumber example to login to hmrc portal</code></p>
+<p>I wanteed to see how ChatGPT would write Cucumber scenarios to test <a href="https://www.access.service.gov.uk/login/signin/creds">the HMRC Government Gateway page</a>, and so I asked: <code class="language-plaintext highlighter-rouge">cucumber example to login to hmrc portal</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of how you could write a Cucumber test to log in to the HMRC portal:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of how you could write a Cucumber test to log in to the HMRC portal:
 
 Feature: Login to HMRC portal
 As a user
@@ -34,9 +34,9 @@ Then I should see an error message
 This Cucumber test is written in the Gherkin language, which uses natural language phrases to describe the steps in the test. In this example, the first scenario tests for a successful login, and the second scenario tests for an unsuccessful login
 </code></pre></div></div>
 
-<p>Whilst the above is pretty good, the generated scenarios were written in an imperative style. To try and get it to <a href="https://cucumber.io/docs/bdd/better-gherkin/">write better Gherkin</a> I then asked it: <code class="highlighter-rouge">write a cucumber example to login to hmrc portal in a declarative style</code></p>
+<p>Whilst the above is pretty good, the generated scenarios were written in an imperative style. To try and get it to <a href="https://cucumber.io/docs/bdd/better-gherkin/">write better Gherkin</a> I then asked it: <code class="language-plaintext highlighter-rouge">write a cucumber example to login to hmrc portal in a declarative style</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of how you could write a Cucumber test to log in to the HMRC portal in a declarative style:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of how you could write a Cucumber test to log in to the HMRC portal in a declarative style:
 
 Feature: Login to HMRC portal 
 In order to access my account information and perform actions on the site 
@@ -63,9 +63,9 @@ In this example, the first scenario tests for a successful login, and the second
 <p>Something to note with ChatGPT is it responds based on how it’s been trained. So for example if it’s been trained on public Github repositories you’ll tend to get whatever style is prevalent by default although the beauty of ChatGPT is you can iterate on the answers.</p>
 
 <h2 id="create-test-data">Create test data</h2>
-<p>Sometimes you might need to quickly generate some test data. Well ChatGPT can be really useful for this: <code class="highlighter-rouge">generate an array of 10 users consisting of firstname, lastname and date of birth in json format</code></p>
+<p>Sometimes you might need to quickly generate some test data. Well ChatGPT can be really useful for this: <code class="language-plaintext highlighter-rouge">generate an array of 10 users consisting of firstname, lastname and date of birth in json format</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of an array of 10 users consisting of first name, last name, and date of birth in JSON format:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is an example of an array of 10 users consisting of first name, last name, and date of birth in JSON format:
 
 [ { "firstName": "John", "lastName": "Doe", "dateOfBirth": "1990-01-01" }, { "firstName": "Jane", "lastName": "Doe", "dateOfBirth": "1992-03-21" }, { "firstName": "Bob", "lastName": "Smith", "dateOfBirth": "1985-05-15" }, { "firstName": "Samantha", "lastName": "Johnson", "dateOfBirth": "1988-07-30" }, { "firstName": "Charles", "lastName": "Williams", "dateOfBirth": "1995-09-12" }, { "firstName": "Emma", "lastName": "Jones", "dateOfBirth": "1987-11-01" }, { "firstName": "William", "lastName": "Brown", "dateOfBirth": "1994-02-17" }, { "firstName": "Ashley", "lastName": "Davis", "dateOfBirth": "1991-04-23" }, { "firstName": "Michael", "lastName": "Miller", "dateOfBirth": "1986-06-28" }, { "firstName": "Emily", "lastName": "Moore", "dateOfBirth": "1996-08-13" }]
 
@@ -75,9 +75,9 @@ This array contains 10 objects, each representing a user with a first name, last
 <h2 id="generate-how-to--step-by-step-guides">Generate how to / step-by-step guides</h2>
 <p>There might be times where you want simple, detailed how to instructions in order to carry out a testing activity. I’m a big fan of both <a href="https://www.postman.com/">Postman</a> and <a href="https://restful-booker.herokuapp.com/">restful booker</a> and wondered whether ChatGPT could help create a step by step guide on how to create a booking within restful booker via Postman.</p>
 
-<p>I asked ChatGPT: <code class="highlighter-rouge">create postman request to create a booking in restful booker</code></p>
+<p>I asked ChatGPT: <code class="language-plaintext highlighter-rouge">create postman request to create a booking in restful booker</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To create a booking in Restful Booker using Postman, you can use the following steps:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To create a booking in Restful Booker using Postman, you can use the following steps:
 
 1. Open Postman and select the "POST" method.
 2. In the "URL" field, enter the following endpoint: https://restful-booker.herokuapp.com/booking
@@ -93,9 +93,9 @@ Copy code
 </code></pre></div></div>
 
 <h2 id="a-study-buddy">A study buddy</h2>
-<p>Sometimes you might want to learn more about a specific thing to expand your knowledge. ChatGPT is really useful for this type of thing: <code class="highlighter-rouge">what is equivalence partitioning</code></p>
+<p>Sometimes you might want to learn more about a specific thing to expand your knowledge. ChatGPT is really useful for this type of thing: <code class="language-plaintext highlighter-rouge">what is equivalence partitioning</code></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Equivalence partitioning is a software testing technique that involves dividing the input data of a software system into partitions of data that are equivalent in some sense. The idea is to test the system with a representative sample of data from each partition, rather than testing every possible input. The goal is to find and fix defects with the minimum number of test cases.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Equivalence partitioning is a software testing technique that involves dividing the input data of a software system into partitions of data that are equivalent in some sense. The idea is to test the system with a representative sample of data from each partition, rather than testing every possible input. The goal is to find and fix defects with the minimum number of test cases.
 
 In practice, equivalence partitioning can be used to divide input data into classes that are expected to behave in the same way. For example, if a system accepts integers as input, you might create an equivalence partition for positive integers, negative integers, and zero, since these are all treated differently by the system. Another equivalence partition might be created for strings that are too long to be accepted by the system, and another for strings of a valid length. By testing the system with a representative sample from each partition, you can ensure that it is working correctly for all classes of input data.
 </code></pre></div></div>

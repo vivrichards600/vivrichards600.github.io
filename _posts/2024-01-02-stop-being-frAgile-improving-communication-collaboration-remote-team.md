@@ -32,7 +32,7 @@ Whilst directly messaging somebody might seem to be the easiest thing for you, t
 
 If you feel you need to message somebody directly, ensure you ask your question and keep things to the point. It's fine to post pleasantries but don't just do that in a message without your actual question, disturbing somebody who is probably busy and then keeping them waiting.
 
-That's not to say you can just have a chit-chat, of course you can but if you are reaching out to somebody for help or with a question be mindful.
+That's not to say you can't just have a chit-chat, of course you can but if you are reaching out to somebody for help or with a question be mindful.
 
 This site sums this up quite well - [No hello](https://nohello.net/en/).
 

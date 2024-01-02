@@ -1,4 +1,4 @@
-I"/
+I"{
 <p>When developing web applications, they should be accessible to all. When you want to ensure your web application is accessible a check you will want to do is to ensure each form input element has established label relationship.</p>
 
 <blockquote>
@@ -15,12 +15,12 @@
 <ol>
   <li>Open DevTools within Chrome :
     <ul>
-      <li>Windows: <code class="highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="highlighter-rouge">F12</code></li>
-      <li>Mac: <code class="highlighter-rouge">Command+Option+J</code></li>
+      <li>Windows: <code class="language-plaintext highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="language-plaintext highlighter-rouge">F12</code></li>
+      <li>Mac: <code class="language-plaintext highlighter-rouge">Command+Option+J</code></li>
       <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
     </ul>
   </li>
-  <li>Paste the following snippet into the console tab and press <code class="highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+  <li>Paste the following snippet into the console tab and press <code class="language-plaintext highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
 </ol>
 
 <script class="notepad-post-content post" src="https://gist.github.com/vivrichards600/7032395fe59d345d3a0163213e054fa3.js"></script>

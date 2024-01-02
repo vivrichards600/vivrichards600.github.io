@@ -1,4 +1,4 @@
-I"�<p>Often when attempting to submit a form, if you choose to do so without inputting anything, you may find you are prompted to input a field value even before the form has been submitted.</p>
+I"(	<p>Often when attempting to submit a form, if you choose to do so without inputting anything, you may find you are prompted to input a field value even before the form has been submitted.</p>
 
 <p>These inputs could be taking advantage of the <em>required</em> field attribute in an attempt to get users to input a value before they can submit the form.</p>
 
@@ -12,15 +12,15 @@
 <ol>
   <li>Open DevTools within Chrome :
     <ul>
-      <li>Windows: <code class="highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="highlighter-rouge">F12</code></li>
-      <li>Mac: <code class="highlighter-rouge">Command+Option+J</code></li>
+      <li>Windows: <code class="language-plaintext highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="language-plaintext highlighter-rouge">F12</code></li>
+      <li>Mac: <code class="language-plaintext highlighter-rouge">Command+Option+J</code></li>
       <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
     </ul>
   </li>
-  <li>Paste the following snippet into the console tab and press <code class="highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+  <li>Paste the following snippet into the console tab and press <code class="language-plaintext highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
 </ol>
 
-<p><code class="highlighter-rouge">Array.prototype.slice.call (document.querySelectorAll('input, select')).map(function(el){el.removeAttribute('required')});</code></p>
+<p><code class="language-plaintext highlighter-rouge">Array.prototype.slice.call (document.querySelectorAll('input, select')).map(function(el){el.removeAttribute('required')});</code></p>
 
 <p>The above snippet find’s all elements within the currently loaded document (web page) and find’s all elements of type <em>input</em> and <em>select</em>. For each element <em>(el)</em> which is found of these types, the <em>required</em> attribute is removed from the element.</p>
 

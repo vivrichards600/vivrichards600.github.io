@@ -1,4 +1,4 @@
-I"ý<p>Sometimes elements may be styled with a fixed width. The problem with this is if you change the text to be displayed within the styled element, for example changing the language you wish to view the website in, then some of the text may not be displayed as expected.</p>
+I"I<p>Sometimes elements may be styled with a fixed width. The problem with this is if you change the text to be displayed within the styled element, for example changing the language you wish to view the website in, then some of the text may not be displayed as expected.</p>
 
 <p><img src="/images/Chrome DevTools Test Text Length.gif" alt="Example of identifying a link styled with a fixed width with text which isn't displayed as expected" /></p>
 
@@ -10,12 +10,12 @@
 <ol>
   <li>Open DevTools within Chrome :
     <ul>
-      <li>Windows: <code class="highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="highlighter-rouge">F12</code></li>
-      <li>Mac: <code class="highlighter-rouge">Command+Option+J</code></li>
+      <li>Windows: <code class="language-plaintext highlighter-rouge">CTRL+SHIFT+J</code> OR <code class="language-plaintext highlighter-rouge">F12</code></li>
+      <li>Mac: <code class="language-plaintext highlighter-rouge">Command+Option+J</code></li>
       <li>You can also open through the wrench menu (Tools &gt; JavaScript Console)</li>
     </ul>
   </li>
-  <li>Paste the following snippet into the console tab and press <code class="highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
+  <li>Paste the following snippet into the console tab and press <code class="language-plaintext highlighter-rouge">Enter</code> on your keyboard to execute the snippet on the web page you are currently viewing</li>
 </ol>
 
 <script src="https://gist.github.com/vivrichards600/c26d5e81c08baa94df0cdf0566ceb27c.js"></script>
