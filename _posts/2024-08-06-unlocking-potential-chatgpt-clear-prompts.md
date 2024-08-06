@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Unlocking the Potential of ChatGPT for Software Testing with C.L.E.A.R Prompts
+title: Unlocking the Potential of ChatGPT with C.L.E.A.R Prompts
 description:
 headline:
 modified: 2024-08-06
