@@ -5,7 +5,7 @@ description:
 headline:
 modified: 2024-08-06
 category: AI
-tags: [AI, Software Testing, Tools, ChatGpt, Prompts]
+tags: [AI, Software Testing, Heuristic, Tools, ChatGpt, Prompts]
 imagefeature:
 mathjax:
 chart:
@@ -17,11 +17,11 @@ As a software tester, I'm always on the lookout for new tools and methods to enh
 
 ## C.L.E.A.R  
 
-Inspired by his approach, I began experimenting with different ways to structure my prompts and eventually came up with the C.L.E.A.R acronym, which stands for Context, Lead Instructions, Examples, Assumptions, and Review. This method has proven so far to be a useful way to structure prompts, ensuring that ChatGPT provides more relevant and useful responses.
+Inspired by his approach, I began experimenting with different ways to structure my prompts and eventually came up with the C.L.E.A.R heuristic, which stands for Context, Lead Instructions, Examples, Assumptions, and Review. This method has proven so far to be a useful way to structure prompts, ensuring that ChatGPT provides more relevant and useful responses.
 
 It's worth noting though, using C.L.E.A.R is still something I’m experimenting with. I wanted to write and share this approach to see if it was useful for others but also to get feedback and iterate on the idea to make using ChatGPT more useful to assist people.
 
-Here's a breakdown of the C.L.E.A.R approach and why it might be a good idea to start using it when generating test ideas with ChatGPT:
+Here's a breakdown of the C.L.E.A.R heuristic and why it might be a good idea to start using it when generating test ideas with ChatGPT:
 
 ## C - Context
 Providing context helps ChatGPT understand the background and the role it needs to assume. For example:
@@ -183,10 +183,10 @@ Response:
 
 ## A useful approach to assist using ChatGPT
 
-The C.L.E.A.R approach has so far proven to be really useful for me, but it's not something that will just work for anyone. You need to evaluate, iterate, and refine your prompts based on the responses you get back. This isn't a one-size-fits-all method where following C.L.E.A.R guarantees the exact response you want. Also, the output from ChatGPT can be really useful to assist you, not to replace your expertise.
+The C.L.E.A.R heuristic has so far proven to be really useful for me, but it's not something that will just work for anyone. You need to evaluate, iterate, and refine your prompts based on the responses you get back. This isn't a one-size-fits-all method where using C.L.E.A.R guarantees the exact response you want. Also, the output from ChatGPT can be really useful to assist you, not to replace your expertise.
 
 Any tool without proper knowledge can be a hindrance. For example, while generating an automation script with ChatGPT might seem great, you still need the knowledge of what has been generated, including boilerplate code, how to refactor for re-use, and maintainability etc.
 
-I encourage you to give the C.L.E.A.R approach a try and see how it can enhance your use of ChatGPT for generating test ideas, automation scripts, and more. Feel free to share your experiences and any improvements you discover along the way!
+I encourage you to give the C.L.E.A.R heuristic a try and see how it can enhance your use of ChatGPT for generating test ideas, automation scripts, and more. Feel free to share your experiences and any improvements you discover along the way!
 
 Happy testing!
