@@ -27,10 +27,10 @@ Here's a breakdown of the C.L.E.A.R approach and why it might be a good idea to 
 Providing context helps ChatGPT understand the background and the role it needs to assume. For example:
 
 Prompt without context:
-> "Write automation code for the contact form."
+> "Write automation code."
 
 Prompt with context:
-> "As a test automation engineer, write Selenium Page Object Model code for the contact form."
+> "As a test automation engineer who writes code in Python."
 
 ## L - Lead Instructions
 Clear instructions guide ChatGPT to perform the specific action you need, avoiding ambiguous responses.
@@ -45,7 +45,7 @@ Prompt with lead instructions:
 Including examples guides ChatGPT in understanding the format and level of detail expected.
 
 Prompt without examples:
-> "Create a test script for the form on website example.com/contact"
+> "Create a test script for the form on website example.com/contact "
 
 Prompt with examples:
 > "Create a Selenium WebDriver script to automate the contact form. Refer to the example format delimited by three back quotes:
@@ -75,6 +75,8 @@ Prompt with review:
 > "Write a script to submit the form and include validation to check for successful submission."
 
 ## Example Comparison
+The following are some really basic examples to give you an idea of how CLEAR can be really effective. There's always room for improvement!
+
 ### Without Using CLEAR
 Prompt:
 > "Write automation code for this contact form."
@@ -100,8 +102,9 @@ Response:
 ```
 
 ### Using CLEAR
+
 Prompt:
->"As a test automation engineer, write a Selenium WebDriver script to automate the contact form using the following HTML snippet delimited by three back quotes. Assume the form requires standard HTML5 input handling and that you need to include methods for interacting with the form elements as well as validation for successful submission. Review the script to ensure it correctly interacts with the form and checks for submission success."
+>"As a test automation engineer who writes code in Python, write a Selenium WebDriver script to automate the contact form using the following HTML snippet delimited by three back quotes. Assume the form requires standard HTML5 input handling and that you need to include methods for interacting with the form elements as well as validation for successful submission. Review the script to ensure it correctly interacts with the form and checks for submission success."
 > 
 
     ```<form id="contact-form">
