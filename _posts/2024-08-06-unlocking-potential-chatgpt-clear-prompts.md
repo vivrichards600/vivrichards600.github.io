@@ -49,13 +49,12 @@ Prompt without examples:
 
 Prompt with examples:
 > "Create a Selenium WebDriver script to automate the contact form. Refer to the example format delimited by three back quotes:
-> ``````
-> ```
-> driver.find_element_by_id('name').send_keys('John Doe')driver.
-> find_element_by_id('email').send_keys('john.doe@example.com')
-> driver.find_element_by_id('message').send_keys('This is a test message.')
-> driver.find_element_by_xpath('//button[@type="submit"]').click()```
-> ```
+ ```
+ ```driver.find_element_by_id('name').send_keys('John Doe')driver.
+ find_element_by_id('email').send_keys('john.doe@example.com')
+ driver.find_element_by_id('message').send_keys('This is a test message.')
+ driver.find_element_by_xpath('//button[@type="submit"]').click()```
+ ```
 
 ## A - Assumptions
 Stating assumptions clarifies any underlying details that might not be immediately obvious, ensuring that ChatGPT’s response aligns with your needs.
@@ -79,78 +78,87 @@ Prompt with review:
 ### Without Using CLEAR
 Prompt:
 > "Write automation code for this contact form."
-> ``````
-> driver.find_element_by_id('name').send_keys('John Doe')driver.
-> find_element_by_id('email').send_keys('john.doe@example.com')
-> driver.find_element_by_id('message').send_keys('This is a test message.')
-> driver.find_element_by_xpath('//button[@type="submit"]').click()```
+ ```
+ ```driver.find_element_by_id('name').send_keys('John Doe')driver.
+ find_element_by_id('email').send_keys('john.doe@example.com')
+ driver.find_element_by_id('message').send_keys('This is a test message.')
+ driver.find_element_by_xpath('//button[@type="submit"]').click()```
+```
 
 Response:
-> ``````
-> from selenium import webdriver
-> driver = webdriver.Chrome()
-> driver.get('URL_OF_THE_PAGE_WITH_FORM')
->
-> driver.find_element_by_id('name').send_keys('John Doe')
-> driver.find_element_by_id('email').send_keys('john.doe@example.com')
-> driver.find_element_by_id('message').send_keys('This is a test message.')
-> driver.find_element_by_xpath('//button[@type="submit"]').click()
->
-> driver.quit()
+```
+ from selenium import webdriver
+ driver = webdriver.Chrome()
+ driver.get('URL_OF_THE_PAGE_WITH_FORM')
+
+ driver.find_element_by_id('name').send_keys('John Doe')
+ driver.find_element_by_id('email').send_keys('john.doe@example.com')
+ driver.find_element_by_id('message').send_keys('This is a test message.')
+ driver.find_element_by_xpath('//button[@type="submit"]').click()
+
+ driver.quit()
+```
 
 ### Using CLEAR
 Prompt:
 >"As a test automation engineer, write a Selenium WebDriver script to automate the contact form using the following HTML snippet delimited by three back quotes. Assume the form requires standard HTML5 input handling and that you need to include methods for interacting with the form elements as well as validation for successful submission. Review the script to ensure it correctly interacts with the form and checks for submission success."
+> 
 
-> ``````
-> <form id="contact-form">
->     <label for="name">Name:</label>
->     <input type="text" id="name" name="name" required>
->
->     <label for="email">Email:</label>
->     <input type="email" id="email" name="email" required>
->
->     <label for="message">Message:</label>
->     <textarea id="message" name="message" required></textarea>
->
->     <button type="submit">Submit</button>
-> </form>
+    ```<form id="contact-form">
+ 
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required>
+
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" required></textarea>
+
+     <button type="submit">Submit</button>
+    </form>```
+
 
 Response:
-> ``````
-> from selenium.webdriver.common.by import By
-> from selenium.webdriver.support.ui import WebDriverWait
-> from selenium.webdriver.support import expected_conditions as EC
->
-> class ContactFormPage:
-> def __init__(self, driver):
-> self.driver = driver
-> self.wait = WebDriverWait(driver, 10)
-> self.name_field = (By.ID, 'name')
-> self.email_field = (By.ID, 'email')
-> self.message_field = (By.ID, 'message')
-> self.submit_button = (By.XPATH, '//button[@type="submit"]')
-> self.success_message = (By.ID, 'success-message')  # Adjust based on > actual success message
->
->     def enter_name(self, name):
->         element = self.wait.until(EC.visibility_of_element_located(self.name_field))
->         element.send_keys(name)
->
->     def enter_email(self, email):
->         element = self.wait.until(EC.visibility_of_element_located(self.email_field))
->         element.send_keys(email)
->
->     def enter_message(self, message):
->         element = self.wait.until(EC.visibility_of_element_located(self.message_field))
->         element.send_keys(message)
->
->     def submit_form(self):
->         element = self.wait.until(EC.element_to_be_clickable(self.submit_button))
->         element.click()
->
->     def verify_success(self):
->         success_element = self.wait.until(EC.visibility_of_element_located(self.success_message))
->         assert success_element.is_displayed(), "Form submission failed."
+```
+ from selenium.webdriver.common.by import By
+ from selenium.webdriver.support.ui import WebDriverWait
+ from selenium.webdriver.support import expected_conditions as EC
+
+ class ContactFormPage:
+ def __init__(self, driver):
+ self.driver = driver
+ self.wait = WebDriverWait(driver, 10)
+ self.name_field = (By.ID, 'name')
+ self.email_field = (By.ID, 'email')
+ self.message_field = (By.ID, 'message')
+ self.submit_button = (By.XPATH, '//button[@type="submit"]')
+ self.success_message = (By.ID, 'success-message')  # Adjust based on > actual success message
+
+     def enter_name(self, name):
+         element = self.wait.until(EC.visibility_of_element_located(self.name_field))
+         element.send_keys(name)
+
+     def enter_email(self, email):
+         element = self.wait.until(EC.visibility_of_element_located(self.email_field))
+         element.send_keys(email)
+
+     def enter_message(self, message):
+         element = self.wait.until(EC.visibility_of_element_located(self.message_field))
+         element.send_keys(message)
+
+     def submit_form(self):
+         element = self.wait.until(EC.element_to_be_clickable(self.submit_button))
+         element.click()
+
+     def verify_success(self):
+         success_element = self.wait.until(EC.visibility_of_element_located(self.success_message))
+         assert success_element.is_displayed(), "Form submission failed."
+```
+
+
+
+## A useful approach to assist using ChatGPT
 
 The C.L.E.A.R approach has so far proven to be really useful for me, but it's not something that will just work for anyone. You need to evaluate, iterate, and refine your prompts based on the responses you get back. This isn't a one-size-fits-all method where following C.L.E.A.R guarantees the exact response you want. Also, the output from ChatGPT can be really useful to assist you, not to replace your expertise.
 
