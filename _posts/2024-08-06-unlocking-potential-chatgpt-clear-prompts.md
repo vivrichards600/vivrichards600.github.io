@@ -49,12 +49,21 @@ Prompt without examples:
 
 Prompt with examples:
 > "Create a Selenium WebDriver script to automate the contact form. Refer to the example format delimited by three back quotes:
- ```
- ```driver.find_element_by_id('name').send_keys('John Doe')driver.
- find_element_by_id('email').send_keys('john.doe@example.com')
- driver.find_element_by_id('message').send_keys('This is a test message.')
- driver.find_element_by_xpath('//button[@type="submit"]').click()```
- ```
+
+    ```<form id="contact-form">
+ 
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required>
+
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" required></textarea>
+
+     <button type="submit">Submit</button>
+    </form>```
+
 
 ## A - Assumptions
 Stating assumptions clarifies any underlying details that might not be immediately obvious, ensuring that ChatGPT’s response aligns with your needs.
@@ -80,12 +89,22 @@ The following are some really basic examples to give you an idea of how CLEAR ca
 ### Without Using CLEAR
 Prompt:
 > "Write automation code for this contact form."
- ```
- ```driver.find_element_by_id('name').send_keys('John Doe')driver.
- find_element_by_id('email').send_keys('john.doe@example.com')
- driver.find_element_by_id('message').send_keys('This is a test message.')
- driver.find_element_by_xpath('//button[@type="submit"]').click()```
-```
+
+
+    ```<form id="contact-form">
+ 
+     <label for="name">Name:</label>
+     <input type="text" id="name" name="name" required>
+
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" required>
+
+     <label for="message">Message:</label>
+     <textarea id="message" name="message" required></textarea>
+
+     <button type="submit">Submit</button>
+    </form>```
+
 
 Response:
 ```
@@ -105,7 +124,9 @@ Response:
 
 Prompt:
 >"As a test automation engineer who writes code in Python, write a Selenium WebDriver script to automate the contact form using the following HTML snippet delimited by three back quotes. Assume the form requires standard HTML5 input handling and that you need to include methods for interacting with the form elements as well as validation for successful submission. Review the script to ensure it correctly interacts with the form and checks for submission success."
-> 
+>
+
+
 
     ```<form id="contact-form">
  
@@ -120,7 +141,6 @@ Prompt:
 
      <button type="submit">Submit</button>
     </form>```
-
 
 Response:
 ```
