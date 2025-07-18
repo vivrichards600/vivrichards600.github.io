@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Using AI assistance in Chrome DevTools - A Handy Assistant, Not a Replacement
+title: Using AI Assistance in Chrome DevTools to Find Selectors – A Handy Assistant, Not a Replacement
 description:
 headline:
 modified: 2025-07-18
 category: DevTools
-tags: [DevTools, AI, console panel, elements panel, chrome]
+tags: [DevTools, AI, selectors, console panel, elements panel, chrome]
 imagefeature:
 mathjax:
 chart:
