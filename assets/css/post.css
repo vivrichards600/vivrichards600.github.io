@@ -532,8 +532,9 @@ pre {
   margin-bottom: 1.5625rem; }
 
 code {
-  font-size: 0.9375rem;
-  line-height: 1.2; }
+  font-family: "Bitstream Vera Sans Mono", "Courier", monospace;
+  line-height: 1.2;
+  font-weight: 100; }
 
 iframe {
   border: 0; }
