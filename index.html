@@ -9,7 +9,10 @@ tags: [Viv, Richards, Viv Richards, software, development, testing, automation, 
     <article class="advert fadeInDown">
         <a href="https://www.ministryoftesting.com/dojo/courses/a-software-tester-s-guide-to-chrome-devtools" target="_blank"><img src="/images/course_banner.png" alt="A software testers guide to Chrome DevTools course"></a>
     </article>
-	{% for post in site.posts %}
+{% assign now = 'now' | date: '%s' %}
+{% for post in site.posts %}
+{% assign post_date = post.date | date: '%s' %}
+{% if post_date <= now %}
     <article class="notepad-index-post post row">
         <div class="small-12 medium-3 large-2 columns datetime">
             <span class="notepad-post-meta">
@@ -42,4 +45,5 @@ tags: [Viv, Richards, Viv Richards, software, development, testing, automation, 
             
         </div>
     </article>
-	{% endfor %}
+{% endif %}
+{% endfor %}
