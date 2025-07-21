@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using AI Assistance in Chrome DevTools to Find Selectors – A Handy Assistant, Not a Replacement
+title: Finding Selectors with Chrome DevTools AI Assistance
 description:
 headline:
 modified: 2025-07-18

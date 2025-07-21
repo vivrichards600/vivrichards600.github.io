@@ -15,7 +15,7 @@ featured: true
 
 In my last couple of posts, I explored how the Chrome DevTools AI assistance can help identify DOM selectors and assist with debugging client-side issues.
 
-* [Using AI Assistance in Chrome DevTools to Find Selectors](https://vivrichards.co.uk/devtools/devtools-ai-assistance-find-selectors-a-handy-assistant-not-replacement)
+* [Finding Selectors with Chrome DevTools AI Assistance](https://vivrichards.co.uk/devtools/devtools-ai-assistance-find-selectors-a-handy-assistant-not-replacement)
 * [Debugging with Chrome DevTools AI Assistance](https://vivrichards.co.uk/devtools/debugging-with-chrome-devtools-ai-assistance)
 
 In this post, I’m turning my attention to accessibility, how the Chrome DevTools AI assistance can help identify and correct tabbing issues on a page.
