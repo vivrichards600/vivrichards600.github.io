@@ -30,20 +30,77 @@ nothing gets chased down by hand afterwards.</p>
 <hr>
 
 <div>
-    <h3>Privacy</h3>
-    <p>Journey Capture runs entirely in your browser. Nothing is uploaded anywhere - your captures stay in local browser storage until you export them yourself.</p>
-</div>
-<hr>
-
-<div>
 <h3>Try Journey Capture Today</h3>
     <p><a href="https://chromewebstore.google.com/detail/journey-capture-extension/bdkcomgmkcjdmnimocjfgegmmoifcabe" target="_blank">Download from the Chrome Extension Store</a><br>
         See the full, up-to-date feature list on the Chrome Web Store listing.
     </p>
 </div>
+<hr>
+
+<div id="privacy-policy">
+<h3>Privacy Policy</h3>
+<p><i>Last updated: October 2026</i></p>
+
+<h4>What Journey Capture captures</h4>
+<p>When you click "Capture Screen," Journey Capture records, for that step only:</p>
+<ul>
+    <li>A screenshot of the visible tab, or the full scrollable page if you choose full-page capture</li>
+    <li>The page's URL and title</li>
+    <li>Network requests made by that tab since it last navigated (URL, method, status code)</li>
+    <li>Console errors and warnings logged by the page</li>
+    <li>An automated accessibility scan (axe-core) of the page</li>
+    <li>Automated page/security checks (e.g. broken images, mixed content, missing security headers) and performance findings (e.g. slow page load)</li>
+    <li>Basic system info: browser name/version, OS, screen resolution, locale, timezone, and whether cookies/JavaScript are enabled</li>
+    <li>Any title or notes you type in for that step</li>
+</ul>
+<p>Journey Capture does not record anything about pages you haven't explicitly captured, and
+does not run in the background watching your browsing - the checks above only run at the moment
+you click Capture.</p>
+
+<h4>Where that data goes</h4>
+<p>Nowhere but your own browser. Everything is written to <code>chrome.storage.local</code> -
+Chrome's local, on-device storage for extensions - and stays there until you delete it, export
+it, or uninstall the extension. Journey Capture has no backend server, sends no analytics, and
+makes no network requests of its own; the only data transmission that ever happens is the normal
+network traffic of the page you're browsing, which the extension observes but doesn't redirect
+or copy anywhere. Exporting a journey (as JSON or a PDF report) saves a file to your own
+computer - nothing is uploaded.</p>
+
+<h4>Data retention and deletion</h4>
+<p>Starting a new journey clears all previously stored captures. Uninstalling the extension
+removes everything Chrome stored for it. You can also delete individual captures, or an entire
+journey, at any time from the journey view.</p>
+
+<h4>Why each permission is requested</h4>
+<ul>
+    <li><b>activeTab / tabs:</b> to know which tab to screenshot and capture logs from</li>
+    <li><b>storage / unlimitedStorage:</b> to save your captures locally (screenshots can be large)</li>
+    <li><b>webRequest:</b> to record network requests and response headers for the tab being captured</li>
+    <li><b>notifications:</b> to show a small confirmation when a capture or journey starts/stops</li>
+    <li><b>Host permissions (all sites) and the content scripts that run on every page:</b> Journey Capture can be used to document and test any site you visit, so it needs to be able to run its checks (accessibility, console capture, page/security checks) on whichever page you choose to capture - not just a fixed list of sites</li>
+</ul>
+
+<h4>Third parties</h4>
+<p>Journey Capture doesn't share, sell, or transmit your data to any third party, ad network, or
+analytics service - there isn't one integrated. The accessibility scan uses the open-source
+axe-core library, bundled with the extension and run entirely on your device; it isn't a remote
+service.</p>
+
+<h4>Children's privacy</h4>
+<p>Journey Capture is a developer/testing tool and isn't directed at children, and doesn't
+knowingly collect information from anyone.</p>
+
+<h4>Changes to this policy</h4>
+<p>If what Journey Capture collects or how it's stored ever changes, this page will be updated
+and the "last updated" date above will reflect it.</p>
+
+<h4>Contact</h4>
+<p>Questions about this policy or the extension - see the contact links in the site footer below.</p>
+</div>
+
 
 <style>
-    h3 {
+    h3, h4 {
         margin: 30px 0;
     }
 
